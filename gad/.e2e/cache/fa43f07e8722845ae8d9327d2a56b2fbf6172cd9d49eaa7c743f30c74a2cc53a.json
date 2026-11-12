@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-12T07:44:39.107Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap node \"delete\"",
+        "target": {
+          "testId": "delete"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/g1-article.e2e.ts::G1%20agentowy%3A%20dodanie%2C%20sprawdzenie%20i%20usuni%C4%99cie",
+      "targetId": "web",
+      "instructionDigest": "60e270da8c814f50e09da7fb64f3d1abaa65c602d068e4d74370d072010883b4",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "github-copilot.chat",
+      "model": "gpt-4.1"
+    },
+    "summary": "Tapped the delete button for the article titled 'E2E article 1794469375865'. The app navigated to the articles list page, and the deleted article is no longer visible. The delete operation succeeded.",
+    "startPath": "/article.html?id=76&msg=Article%20was%20created",
+    "endPath": "/articles.html",
+    "endAnchors": [
+      {
+        "role": "alert",
+        "testId": "alert-popup"
+      },
+      {
+        "role": "button",
+        "name": "Add Article"
+      },
+      {
+        "role": "button",
+        "name": "Upload"
+      },
+      {
+        "role": "link",
+        "name": "Prev",
+        "testId": "prev-button"
+      },
+      {
+        "role": "link",
+        "name": "Next",
+        "testId": "next-button"
+      },
+      {
+        "text": "1",
+        "testId": "current-page"
+      },
+      {
+        "text": "13",
+        "testId": "total-pages"
+      },
+      {
+        "text": "Items/Page:"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "alert",
+        "name": "Article was created",
+        "testId": "alert-popup"
+      },
+      {
+        "role": "button",
+        "name": "Add Comment"
+      },
+      {
+        "testId": "edit"
+      },
+      {
+        "testId": "delete"
+      },
+      {
+        "text": "title:"
+      },
+      {
+        "text": "E2E article 1794469375865",
+        "testId": "article-title"
+      },
+      {
+        "testId": "article-title-edit"
+      },
+      {
+        "role": "button",
+        "name": "CSV",
+        "testId": "download-scv"
+      }
+    ],
+    "endWaitMs": 22150,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "b500c6b188428b555a6c91d1a3ff20801d8d496c4bc12302ef3f57e7d3411d0d",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "9c4e2b32df2bb86b3a369568d91cdbe6d0d95ada307b43348f6264d02dbb6041",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

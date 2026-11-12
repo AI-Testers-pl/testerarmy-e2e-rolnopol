@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-12T07:42:55.816Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Add Article\"",
+        "target": {
+          "role": "button",
+          "name": "Add Article"
+        }
+      },
+      {
+        "name": "type",
+        "summary": "type \"{{param:/title}}\" into textbox \"title-input\"",
+        "target": {
+          "role": "textbox",
+          "testId": "title-input"
+        },
+        "value": "{{param:/title}}"
+      },
+      {
+        "name": "type",
+        "summary": "type \"Body written by the e2e agent test.\" into textbox \"body-text\"",
+        "target": {
+          "role": "textbox",
+          "testId": "body-text"
+        },
+        "value": "Body written by the e2e agent test."
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Save\"",
+        "target": {
+          "role": "button",
+          "name": "Save",
+          "testId": "save"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "tests/g1-article.e2e.ts::G1%20mieszany%3A%20agent%20dodaje%20artyku%C5%82%2C%20kod%20sprawdza",
+      "targetId": "web",
+      "instructionDigest": "b60cc21624a53f77ee202714535fdba22064b44151935b0472798db01635f6a4",
+      "paramsDigest": "fd6d1fd2c2c9fa40ed80f8f24b8da5112678c1dfac9ce8f075069c3ab9530b30",
+      "callIndex": 0,
+      "agent": "doer"
+    },
+    "recordedBy": {
+      "provider": "github-copilot.chat",
+      "model": "gpt-4.1"
+    },
+    "summary": "Added a new article titled \"E2E article 1794469317322\" with body \"Body written by the e2e agent test.\" by filling the form and tapping Save. The app navigated to the article's detail view, displaying the new article and a confirmation alert: \"Article was created.\"",
+    "startPath": "/articles.html",
+    "endPath": "/article.html?id=75&msg=Article%20was%20created",
+    "endAnchors": [
+      {
+        "role": "alert",
+        "name": "Article was created",
+        "testId": "alert-popup"
+      },
+      {
+        "role": "button",
+        "name": "Add Comment"
+      },
+      {
+        "testId": "edit"
+      },
+      {
+        "testId": "delete"
+      },
+      {
+        "text": "title:"
+      },
+      {
+        "text": "{{param:/title}}",
+        "testId": "article-title"
+      },
+      {
+        "testId": "article-title-edit"
+      },
+      {
+        "role": "link",
+        "name": "E2E Agent",
+        "testId": "user-name"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "button",
+        "name": "Add Article"
+      },
+      {
+        "role": "button",
+        "name": "Upload"
+      },
+      {
+        "role": "link",
+        "name": "Prev",
+        "testId": "prev-button"
+      },
+      {
+        "role": "link",
+        "name": "Next",
+        "testId": "next-button"
+      },
+      {
+        "text": "1",
+        "testId": "current-page"
+      },
+      {
+        "text": "13",
+        "testId": "total-pages"
+      },
+      {
+        "text": "Items/Page:"
+      },
+      {
+        "text": "Sort:"
+      }
+    ],
+    "endWaitMs": 32478,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "b500c6b188428b555a6c91d1a3ff20801d8d496c4bc12302ef3f57e7d3411d0d",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "9c4e2b32df2bb86b3a369568d91cdbe6d0d95ada307b43348f6264d02dbb6041",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

@@ -1,0 +1,4263 @@
+{
+  "schemaVersion": "report-1",
+  "run": {
+    "id": "01a1ceb4-c45e-7e6d-9101-b72c2f14d334",
+    "specVersion": "0.1",
+    "runner": {
+      "name": "e2e",
+      "version": "0.23.0"
+    },
+    "status": "passed",
+    "exitCode": 0,
+    "startedAt": "2026-11-12T07:41:55.927Z",
+    "finishedAt": "2026-11-12T07:45:23.149Z",
+    "project": {
+      "id": "unportable-1fff4f07a77cfd668e1cb62db514fffd",
+      "configDigest": "fd82e0730a8fa6333d39835214a5572f03b2620d71887e972a394d14e269cd88"
+    },
+    "environment": {
+      "ci": false,
+      "trustNoticeShown": false,
+      "os": "darwin 24.5.0",
+      "arch": "arm64",
+      "runtime": "node v24.21.0"
+    },
+    "targets": [
+      {
+        "id": "web",
+        "index": 0,
+        "platform": "web",
+        "baseOrigin": "http://localhost:3200",
+        "environment": "test",
+        "engine": {
+          "name": "web",
+          "version": "0.15.5",
+          "spiVersion": 1
+        },
+        "capabilities": [
+          "actions",
+          "artifacts",
+          "browser",
+          "keyboard",
+          "location",
+          "observation",
+          "pointer",
+          "state"
+        ],
+        "artifactCapabilities": [
+          "screenshot",
+          "video"
+        ],
+        "stateCapability": true
+      }
+    ],
+    "serialGroups": [],
+    "results": [
+      {
+        "id": "ebd9a38389846546df59dea28ad85f7debf44ca1a1fe1be53ecff7a8470a2bce",
+        "testId": "tests/g1-article.e2e.ts::G1%20mieszany%3A%20agent%20dodaje%20artyku%C5%82%2C%20kod%20sprawdza",
+        "kind": "test",
+        "declarationIndex": 0,
+        "titlePath": [
+          "G1 mieszany: agent dodaje artykuł, kod sprawdza"
+        ],
+        "file": "tests/g1-article.e2e.ts",
+        "source": {
+          "file": "tests/g1-article.e2e.ts",
+          "line": 7,
+          "column": 1
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g1",
+          "mixed"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb4-caa5-7e97-8018-f4d3fedd32b8",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:41:57.285Z",
+            "durationMs": 58531,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1ceb4-caa5-7e97-8018-f4d3fedd32b8:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/articles.html",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:41:57.322Z",
+                "durationMs": 58,
+                "events": [],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/articles.html",
+                  "nodes": 49,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g1-article.e2e.ts",
+                  "line": 9,
+                  "column": 13
+                }
+              },
+              {
+                "id": "01a1ceb4-caa5-7e97-8018-f4d3fedd32b8:1",
+                "index": 1,
+                "kind": "agent",
+                "api": "agent.act",
+                "label": "add a new article with title {title} and body {body}",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:41:57.381Z",
+                "durationMs": 58412,
+                "events": [
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-12T07:41:57.382Z",
+                    "durationMs": 115,
+                    "status": "passed",
+                    "bytes": 8681,
+                    "count": 169
+                  },
+                  {
+                    "kind": "engine",
+                    "startedAt": "2026-11-12T07:42:07.689Z",
+                    "durationMs": 98,
+                    "status": "passed",
+                    "name": "tap",
+                    "detail": "tap button \"Add Article\""
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-12T07:42:07.787Z",
+                    "durationMs": 108,
+                    "status": "passed",
+                    "bytes": 13142,
+                    "count": 243
+                  },
+                  {
+                    "kind": "model",
+                    "startedAt": "2026-11-12T07:41:57.539Z",
+                    "durationMs": 10358,
+                    "status": "passed",
+                    "name": "executor",
+                    "count": 7313,
+                    "inputTokens": 7298,
+                    "outputTokens": 15
+                  },
+                  {
+                    "kind": "engine",
+                    "startedAt": "2026-11-12T07:42:24.895Z",
+                    "durationMs": 18,
+                    "status": "passed",
+                    "name": "type",
+                    "detail": "type \"E2E article 1794469317322\" into textbox \"title-input\""
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-12T07:42:24.913Z",
+                    "durationMs": 107,
+                    "status": "passed",
+                    "bytes": 13176,
+                    "count": 243
+                  },
+                  {
+                    "kind": "engine",
+                    "startedAt": "2026-11-12T07:42:25.020Z",
+                    "durationMs": 16,
+                    "status": "passed",
+                    "name": "type",
+                    "detail": "type \"Body written by the e2e agent test.\" into textbox \"body-text\""
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-12T07:42:25.036Z",
+                    "durationMs": 103,
+                    "status": "passed",
+                    "bytes": 13220,
+                    "count": 243
+                  },
+                  {
+                    "kind": "model",
+                    "startedAt": "2026-11-12T07:42:07.898Z",
+                    "durationMs": 17241,
+                    "status": "passed",
+                    "name": "executor",
+                    "count": 12463,
+                    "inputTokens": 12391,
+                    "outputTokens": 72
+                  },
+                  {
+                    "kind": "engine",
+                    "startedAt": "2026-11-12T07:42:33.260Z",
+                    "durationMs": 52,
+                    "status": "passed",
+                    "name": "tap",
+                    "detail": "tap button \"Save\""
+                  },
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-12T07:42:33.316Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3200/article.html?id=75&msg=Article%20was%20created"
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-12T07:42:33.313Z",
+                    "durationMs": 266,
+                    "status": "passed",
+                    "bytes": 2947,
+                    "count": 61
+                  },
+                  {
+                    "kind": "model",
+                    "startedAt": "2026-11-12T07:42:25.142Z",
+                    "durationMs": 8437,
+                    "status": "passed",
+                    "name": "executor",
+                    "count": 12671,
+                    "inputTokens": 12656,
+                    "outputTokens": 15
+                  },
+                  {
+                    "kind": "model",
+                    "startedAt": "2026-11-12T07:42:33.581Z",
+                    "durationMs": 22110,
+                    "status": "passed",
+                    "name": "executor",
+                    "count": 13787,
+                    "inputTokens": 13707,
+                    "outputTokens": 80
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-12T07:42:55.692Z",
+                    "durationMs": 93,
+                    "status": "passed",
+                    "bytes": 2947,
+                    "count": 61
+                  }
+                ],
+                "agent": "doer",
+                "artifacts": [],
+                "metrics": {
+                  "modelCalls": 4,
+                  "actionSteps": 4,
+                  "observationBytes": 13220,
+                  "contextBytes": 0,
+                  "ledgerBytes": 36
+                },
+                "model": {
+                  "provider": "github-copilot.chat",
+                  "model": "gpt-4.1",
+                  "endpoint": "provider-default",
+                  "adapterVersion": "executor/e2e-default-agent@2",
+                  "policyVersion": "e2e-default-agent/2",
+                  "calls": 4,
+                  "tokenAccounting": "provider",
+                  "inputTokens": 46052,
+                  "outputTokens": 182,
+                  "peakTokensPerCall": 13787,
+                  "cacheReadTokens": 23552
+                },
+                "cache": {
+                  "mode": "missed",
+                  "reason": "no-entry",
+                  "replayedActions": 0,
+                  "totalActions": 0,
+                  "entry": "a11645c57876aaa0433ea8c6cb8606300ac8d98b8002cec81853ab021a87e87a",
+                  "write": "saved"
+                },
+                "observationRevision": "b14",
+                "explanation": "Added a new article titled \"E2E article 1794469317322\" with body \"Body written by the e2e agent test.\" by filling the form and tapping Save. The app navigated to the article's detail view, displaying the new article and a confirmation alert: \"Article was created.\"",
+                "turns": [
+                  {
+                    "index": 1,
+                    "calls": [
+                      "tap({\"target\":\"n3002\"})"
+                    ],
+                    "outcome": "[tap] Tapped #n3002.\n\nThe screen changed substantially since revision b2. Current screen (revision b4, path /articles.html, 243 nodes):\n#root document \"🦎 GAD | Articles\"\n #n2 banner\n  #n3 heading \"🦎 GAD Go to Articles Go to Comments Go to Flashposts Go to Game List Users Statistics || Add Article Upload\"\n   #n4 link \"🦎 GAD\" href=\"/\"\n   #n5 link \"Go to Articles\" href=\"/articles.html\"\n    #n6 button \"Go to Articles\" text=\"Articles\" testid=\"open-articles\" [disabled]\n   #n7 link \"Go to Comments\" href=\"/comments.html\"\n    #n8 button \"Go to Comments\" text=\"Comments\" testid=\"open-comments\"\n   #n9 …[truncated]"
+                  },
+                  {
+                    "index": 2,
+                    "calls": [
+                      "type({\"target\":\"n9003\",\"value\":\"E2E article 1794469317322\"})",
+                      "type({\"target\":\"n9008\",\"value\":\"Body written by the e2e agent test.\"})"
+                    ],
+                    "outcome": "[type] Typed into #n9003.\n\nScreen changes since revision b4 (now revision b6, path /articles.html, 243 nodes): 1 changed. Every node not listed as removed is still on screen under the id you have.\nchanged #n9003 textbox testid=\"title-input\" value=\"E2E article 1794469317322\" (was: #n9003 textbox testid=\"title-input\")\n[type] Typed into #n9008.\n\nScreen changes since revision b6 (now revision b8, path /articles.html, 243 nodes): 1 changed. Every node not listed as removed is still on screen under the id you have.\nchanged #n9008 textbox testid=\"body-text\" value=\"Body written by the e2e agent test.\"…[truncated]"
+                  },
+                  {
+                    "index": 3,
+                    "calls": [
+                      "tap({\"target\":\"n9072\"})"
+                    ],
+                    "outcome": "[tap] Tapped #n9072.\n\nThe screen changed substantially since revision b8. Current screen (revision b12, path /article.html?id=75&msg=Article%20was%20created, 61 nodes):\n#root document \"🦎 GAD | Article\"\n #n42001 banner\n  #n42002 heading \"🦎 GAD Go to Articles Go to Comments Go to Flashposts Go to Game List Users Statistics || Add Comment\"\n   #n42003 link \"🦎 GAD\" href=\"/\"\n   #n42004 link \"Go to Articles\" href=\"/articles.html\"\n    #n42005 button \"Go to Articles\" text=\"Articles\" testid=\"open-articles\"\n   #n42006 link \"Go to Comments\" href=\"/comments.html\"\n    #n42007 button \"Go to Comments\" text…[truncated]"
+                  },
+                  {
+                    "index": 4,
+                    "calls": [
+                      "complete_step({\"status\":\"passed\",\"summary\":\"Added a new article titled \\\"E2E article 1794469317322\\\" with body \\\"Body written by the e2e agent test.\\\" by filling the form and tapping Save. The app nav…[truncated]"
+                    ],
+                    "outcome": "[complete_step] Step concluded."
+                  }
+                ],
+                "screen": {
+                  "location": "http://localhost:3200/article.html?id=75&msg=Article%20was%20created",
+                  "nodes": 61,
+                  "since": 0,
+                  "changes": [
+                    "changed document \"🦎 GAD | Article\" (was: document \"🦎 GAD | Articles\")",
+                    "added heading \"🦎 GAD Go to Articles Go to Comments Go to Flashposts Go to Game List Users Statistics || Add Comment\"",
+                    "added button \"Go to Articles\" text=\"Articles\" testid=\"open-articles\"",
+                    "added text=\"||\"",
+                    "added button \"Add Comment\"",
+                    "added alert \"Article was created\" testid=\"alert-popup\"",
+                    "added testid=\"edit\"",
+                    "added testid=\"delete\"",
+                    "added image",
+                    "added table",
+                    "added rowgroup",
+                    "added row \"title: E2E article 1794469317322\""
+                  ],
+                  "more": 47
+                },
+                "source": {
+                  "file": "tests/g1-article.e2e.ts",
+                  "line": 10,
+                  "column": 15
+                }
+              },
+              {
+                "id": "01a1ceb4-caa5-7e97-8018-f4d3fedd32b8:2",
+                "index": 2,
+                "kind": "assertion",
+                "api": "expect.toHaveText",
+                "label": "getByTestId(\"article-title\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:42:55.793Z",
+                "durationMs": 19,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-12T07:42:55.794Z",
+                    "durationMs": 18,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/g1-article.e2e.ts",
+                  "line": 11,
+                  "column": 53
+                }
+              },
+              {
+                "id": "01a1ceb4-caa5-7e97-8018-f4d3fedd32b8:3",
+                "index": 3,
+                "kind": "assertion",
+                "api": "expect.toContainText",
+                "label": "getByTestId(\"article-body\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:42:55.812Z",
+                "durationMs": 1,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-12T07:42:55.812Z",
+                    "durationMs": 1,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/g1-article.e2e.ts",
+                  "line": 12,
+                  "column": 52
+                }
+              }
+            ],
+            "appLog": [
+              {
+                "source": "network",
+                "level": "warning",
+                "text": "GET http://localhost:3200/data/users/face.png 404 Not Found",
+                "at": "2026-11-12T07:41:57.366Z",
+                "step": 0
+              },
+              {
+                "source": "network",
+                "level": "warning",
+                "text": "GET http://localhost:3200/data/users/face.png 404 Not Found",
+                "at": "2026-11-12T07:42:33.373Z",
+                "step": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "4bfee111024d9f290f0528f0d405f2ab39b3f7e870b8296ec9f5ac5948c74e92",
+        "testId": "tests/g1-article.e2e.ts::G1%20agentowy%3A%20dodanie%2C%20sprawdzenie%20i%20usuni%C4%99cie",
+        "kind": "test",
+        "declarationIndex": 1,
+        "titlePath": [
+          "G1 agentowy: dodanie, sprawdzenie i usunięcie"
+        ],
+        "file": "tests/g1-article.e2e.ts",
+        "source": {
+          "file": "tests/g1-article.e2e.ts",
+          "line": 15,
+          "column": 1
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g1",
+          "agent"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb5-af49-7dfc-a34d-cbcd28712c2e",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:42:55.817Z",
+            "durationMs": 103289,
+            "artifacts": [
+              {
+                "id": "01a1ceb5-af49-7dfc-a34d-cbcd28712c2e:artifact:0",
+                "kind": "screenshot",
+                "mediaType": "image/png",
+                "redaction": "complete",
+                "producer": {
+                  "kind": "step",
+                  "stepId": "01a1ceb5-af49-7dfc-a34d-cbcd28712c2e:3"
+                },
+                "path": "g1-article-g1-agentowy-dodanie-sprawdzenie-4bfee111024d9f29/attempt-1/screenshots/001-assert.png",
+                "size": 122619,
+                "sha256": "6ef3a120852e8d915877f2cd377288c36571f88b5e8018883e2910e707ad28c6"
+              },
+              {
+                "id": "01a1ceb5-af49-7dfc-a34d-cbcd28712c2e:artifact:1",
+                "kind": "screenshot",
+                "mediaType": "image/png",
+                "redaction": "complete",
+                "producer": {
+                  "kind": "step",
+                  "stepId": "01a1ceb5-af49-7dfc-a34d-cbcd28712c2e:5"
+                },
+                "path": "g1-article-g1-agentowy-dodanie-sprawdzenie-4bfee111024d9f29/attempt-1/screenshots/002-assert.png",
+                "size": 339696,
+                "sha256": "44bf645efcf88c14348734954dd9aa196ad888bafa50c5f60ca7bae6c7ed3271"
+              }
+            ],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1ceb5-af49-7dfc-a34d-cbcd28712c2e:0",
+                "index": 0,
+                "kind": "resource",
+                "api": "browser.onDialog",
+                "label": "",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:42:55.865Z",
+                "durationMs": 0,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/g1-article.e2e.ts",
+                  "line": 17,
+                  "column": 17
+                }
+              },
+              {
+                "id": "01a1ceb5-af49-7dfc-a34d-cbcd28712c2e:1",
+                "index": 1,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/articles.html",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:42:55.865Z",
+                "durationMs": 67,
+                "events": [],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/articles.html",
+                  "nodes": 49,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g1-article.e2e.ts",
+                  "line": 19,
+                  "column": 13
+                }
+              },
+              {
+                "id": "01a1ceb5-af49-7dfc-a34d-cbcd28712c2e:2",
+                "index": 2,
+                "kind": "agent",
+                "api": "agent.act",
+                "label": "add a new article with title {title} and body {body}",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:42:55.933Z",
+                "durationMs": 62040,
+                "events": [
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-12T07:42:55.933Z",
+                    "durationMs": 102,
+                    "status": "passed",
+                    "bytes": 8466,
+                    "count": 169
+                  },
+                  {
+                    "kind": "engine",
+                    "startedAt": "2026-11-12T07:43:07.327Z",
+                    "durationMs": 101,
+                    "status": "passed",
+                    "name": "tap",
+                    "detail": "tap button \"Add Article\""
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-12T07:43:07.428Z",
+                    "durationMs": 106,
+                    "status": "passed",
+                    "bytes": 12855,
+                    "count": 243
+                  },
+                  {
+                    "kind": "model",
+                    "startedAt": "2026-11-12T07:42:56.037Z",
+                    "durationMs": 11497,
+                    "status": "passed",
+                    "name": "executor",
+                    "count": 7258,
+                    "inputTokens": 7243,
+                    "outputTokens": 15
+                  },
+                  {
+                    "kind": "engine",
+                    "startedAt": "2026-11-12T07:43:29.527Z",
+                    "durationMs": 19,
+                    "status": "passed",
+                    "name": "type",
+                    "detail": "type \"E2E article 1794469375865\" into textbox \"title-input\""
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-12T07:43:29.546Z",
+                    "durationMs": 108,
+                    "status": "passed",
+                    "bytes": 12889,
+                    "count": 243
+                  },
+                  {
+                    "kind": "engine",
+                    "startedAt": "2026-11-12T07:43:29.654Z",
+                    "durationMs": 17,
+                    "status": "passed",
+                    "name": "type",
+                    "detail": "type \"Body written by the e2e agent test.\" into textbox \"body-text\""
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-12T07:43:29.672Z",
+                    "durationMs": 105,
+                    "status": "passed",
+                    "bytes": 12933,
+                    "count": 243
+                  },
+                  {
+                    "kind": "model",
+                    "startedAt": "2026-11-12T07:43:07.535Z",
+                    "durationMs": 22242,
+                    "status": "passed",
+                    "name": "executor",
+                    "count": 12282,
+                    "inputTokens": 12210,
+                    "outputTokens": 72
+                  },
+                  {
+                    "kind": "engine",
+                    "startedAt": "2026-11-12T07:43:40.745Z",
+                    "durationMs": 34,
+                    "status": "passed",
+                    "name": "tap",
+                    "detail": "tap button \"Save\""
+                  },
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-12T07:43:40.781Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3200/article.html?id=76&msg=Article%20was%20created"
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-12T07:43:40.780Z",
+                    "durationMs": 266,
+                    "status": "passed",
+                    "bytes": 2947,
+                    "count": 61
+                  },
+                  {
+                    "kind": "model",
+                    "startedAt": "2026-11-12T07:43:29.779Z",
+                    "durationMs": 11268,
+                    "status": "passed",
+                    "name": "executor",
+                    "count": 12490,
+                    "inputTokens": 12475,
+                    "outputTokens": 15
+                  },
+                  {
+                    "kind": "model",
+                    "startedAt": "2026-11-12T07:43:41.048Z",
+                    "durationMs": 16809,
+                    "status": "passed",
+                    "name": "executor",
+                    "count": 13612,
+                    "inputTokens": 13526,
+                    "outputTokens": 86
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-12T07:43:57.858Z",
+                    "durationMs": 112,
+                    "status": "passed",
+                    "bytes": 2947,
+                    "count": 61
+                  }
+                ],
+                "agent": "default",
+                "artifacts": [],
+                "metrics": {
+                  "modelCalls": 4,
+                  "actionSteps": 4,
+                  "observationBytes": 12933,
+                  "contextBytes": 0,
+                  "ledgerBytes": 63
+                },
+                "model": {
+                  "provider": "github-copilot.chat",
+                  "model": "gpt-4.1",
+                  "endpoint": "provider-default",
+                  "adapterVersion": "executor/e2e-default-agent@2",
+                  "policyVersion": "e2e-default-agent/2",
+                  "calls": 4,
+                  "tokenAccounting": "provider",
+                  "inputTokens": 45454,
+                  "outputTokens": 188,
+                  "peakTokensPerCall": 13612,
+                  "cacheReadTokens": 31744
+                },
+                "cache": {
+                  "mode": "missed",
+                  "reason": "no-entry",
+                  "replayedActions": 0,
+                  "totalActions": 0,
+                  "entry": "d66be84eee4c54e8342dd3e49faab4d7037b9222ef0e5a596d00231da0186ed4",
+                  "write": "saved"
+                },
+                "observationRevision": "b14",
+                "explanation": "Added a new article with title 'E2E article 1794469375865' and body 'Body written by the e2e agent test.'. The article was saved, and the screen now displays the full article with the correct title and body. The alert 'Article was created' confirms success. Ready to proceed to verification or deletion.",
+                "turns": [
+                  {
+                    "index": 1,
+                    "calls": [
+                      "tap({\"target\":\"n3002\"})"
+                    ],
+                    "outcome": "[tap] Tapped #n3002.\n\nThe screen changed substantially since revision b2. Current screen (revision b4, path /articles.html, 243 nodes):\n#root document \"🦎 GAD | Articles\"\n #n2 banner\n  #n3 heading \"🦎 GAD Go to Articles Go to Comments Go to Flashposts Go to Game List Users Statistics || Add Article Upload\"\n   #n4 link \"🦎 GAD\" href=\"/\"\n   #n5 link \"Go to Articles\" href=\"/articles.html\"\n    #n6 button \"Go to Articles\" text=\"Articles\" testid=\"open-articles\" [disabled]\n   #n7 link \"Go to Comments\" href=\"/comments.html\"\n    #n8 button \"Go to Comments\" text=\"Comments\" testid=\"open-comments\"\n   #n9 …[truncated]"
+                  },
+                  {
+                    "index": 2,
+                    "calls": [
+                      "type({\"target\":\"n9003\",\"value\":\"E2E article 1794469375865\"})",
+                      "type({\"target\":\"n9008\",\"value\":\"Body written by the e2e agent test.\"})"
+                    ],
+                    "outcome": "[type] Typed into #n9003.\n\nScreen changes since revision b4 (now revision b6, path /articles.html, 243 nodes): 1 changed. Every node not listed as removed is still on screen under the id you have.\nchanged #n9003 textbox testid=\"title-input\" value=\"E2E article 1794469375865\" (was: #n9003 textbox testid=\"title-input\")\n[type] Typed into #n9008.\n\nScreen changes since revision b6 (now revision b8, path /articles.html, 243 nodes): 1 changed. Every node not listed as removed is still on screen under the id you have.\nchanged #n9008 textbox testid=\"body-text\" value=\"Body written by the e2e agent test.\"…[truncated]"
+                  },
+                  {
+                    "index": 3,
+                    "calls": [
+                      "tap({\"target\":\"n9072\"})"
+                    ],
+                    "outcome": "[tap] Tapped #n9072.\n\nThe screen changed substantially since revision b8. Current screen (revision b12, path /article.html?id=76&msg=Article%20was%20created, 61 nodes):\n#root document \"🦎 GAD | Article\"\n #n42001 banner\n  #n42002 heading \"🦎 GAD Go to Articles Go to Comments Go to Flashposts Go to Game List Users Statistics || Add Comment\"\n   #n42003 link \"🦎 GAD\" href=\"/\"\n   #n42004 link \"Go to Articles\" href=\"/articles.html\"\n    #n42005 button \"Go to Articles\" text=\"Articles\" testid=\"open-articles\"\n   #n42006 link \"Go to Comments\" href=\"/comments.html\"\n    #n42007 button \"Go to Comments\" text…[truncated]"
+                  },
+                  {
+                    "index": 4,
+                    "calls": [
+                      "complete_step({\"status\":\"passed\",\"summary\":\"Added a new article with title 'E2E article 1794469375865' and body 'Body written by the e2e agent test.'. The article was saved, and the screen now display…[truncated]"
+                    ],
+                    "outcome": "[complete_step] Step concluded."
+                  }
+                ],
+                "screen": {
+                  "location": "http://localhost:3200/article.html?id=76&msg=Article%20was%20created",
+                  "nodes": 61,
+                  "since": 1,
+                  "changes": [
+                    "changed document \"🦎 GAD | Article\" (was: document \"🦎 GAD | Articles\")",
+                    "added heading \"🦎 GAD Go to Articles Go to Comments Go to Flashposts Go to Game List Users Statistics || Add Comment\"",
+                    "added button \"Go to Articles\" text=\"Articles\" testid=\"open-articles\"",
+                    "added text=\"||\"",
+                    "added button \"Add Comment\"",
+                    "added alert \"Article was created\" testid=\"alert-popup\"",
+                    "added testid=\"edit\"",
+                    "added testid=\"delete\"",
+                    "added image",
+                    "added table",
+                    "added rowgroup",
+                    "added row \"title: E2E article 1794469375865\""
+                  ],
+                  "more": 47
+                },
+                "source": {
+                  "file": "tests/g1-article.e2e.ts",
+                  "line": 20,
+                  "column": 15
+                }
+              },
+              {
+                "id": "01a1ceb5-af49-7dfc-a34d-cbcd28712c2e:3",
+                "index": 3,
+                "kind": "agent",
+                "api": "agent.assert",
+                "label": "the page shows the article titled \"E2E article 1794469375865\" with its body",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:43:57.974Z",
+                "durationMs": 15723,
+                "events": [
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-12T07:43:57.975Z",
+                    "durationMs": 10,
+                    "status": "passed",
+                    "bytes": 2947,
+                    "count": 61
+                  },
+                  {
+                    "kind": "model",
+                    "startedAt": "2026-11-12T07:43:57.985Z",
+                    "durationMs": 15631,
+                    "status": "passed",
+                    "name": "agent-judgment-2",
+                    "count": 1651,
+                    "inputTokens": 1584,
+                    "outputTokens": 67
+                  }
+                ],
+                "agent": "default",
+                "artifacts": [
+                  "01a1ceb5-af49-7dfc-a34d-cbcd28712c2e:artifact:0"
+                ],
+                "metrics": {
+                  "modelCalls": 1,
+                  "actionSteps": 0,
+                  "observationBytes": 2947,
+                  "contextBytes": 0,
+                  "ledgerBytes": 0
+                },
+                "model": {
+                  "provider": "github-copilot.chat",
+                  "model": "gpt-4.1",
+                  "endpoint": "provider-default",
+                  "adapterVersion": "ai-sdk/0.23.0",
+                  "policyVersion": "policy-0.3",
+                  "calls": 1,
+                  "tokenAccounting": "provider",
+                  "inputTokens": 1584,
+                  "outputTokens": 67,
+                  "peakTokensPerCall": 1651,
+                  "cacheReadTokens": 0
+                },
+                "observationRevision": "b15",
+                "explanation": "The article titled 'E2E article 1794469375865' is shown on the page, and its body 'Body written by the e2e agent test.' is displayed.",
+                "screen": {
+                  "location": "http://localhost:3200/article.html?id=76&msg=Article%20was%20created",
+                  "nodes": 61,
+                  "since": 2,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g1-article.e2e.ts",
+                  "line": 21,
+                  "column": 15
+                }
+              },
+              {
+                "id": "01a1ceb5-af49-7dfc-a34d-cbcd28712c2e:4",
+                "index": 4,
+                "kind": "agent",
+                "api": "agent.act",
+                "label": "delete this article",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:13.698Z",
+                "durationMs": 14689,
+                "events": [
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-12T07:44:13.699Z",
+                    "durationMs": 95,
+                    "status": "passed",
+                    "bytes": 2947,
+                    "count": 61
+                  },
+                  {
+                    "kind": "engine",
+                    "startedAt": "2026-11-12T07:44:16.199Z",
+                    "durationMs": 38,
+                    "status": "passed",
+                    "name": "tap",
+                    "detail": "tap node \"delete\""
+                  },
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-12T07:44:16.249Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3200/articles.html"
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-12T07:44:16.237Z",
+                    "durationMs": 223,
+                    "status": "passed",
+                    "bytes": 8738,
+                    "count": 169
+                  },
+                  {
+                    "kind": "model",
+                    "startedAt": "2026-11-12T07:44:13.797Z",
+                    "durationMs": 2664,
+                    "status": "passed",
+                    "name": "executor",
+                    "count": 5472,
+                    "inputTokens": 5457,
+                    "outputTokens": 15
+                  },
+                  {
+                    "kind": "model",
+                    "startedAt": "2026-11-12T07:44:16.462Z",
+                    "durationMs": 11817,
+                    "status": "passed",
+                    "name": "executor",
+                    "count": 8524,
+                    "inputTokens": 8463,
+                    "outputTokens": 61
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-12T07:44:28.280Z",
+                    "durationMs": 105,
+                    "status": "passed",
+                    "bytes": 8738,
+                    "count": 169
+                  }
+                ],
+                "agent": "default",
+                "artifacts": [],
+                "metrics": {
+                  "modelCalls": 2,
+                  "actionSteps": 1,
+                  "observationBytes": 8738,
+                  "contextBytes": 0,
+                  "ledgerBytes": 705
+                },
+                "model": {
+                  "provider": "github-copilot.chat",
+                  "model": "gpt-4.1",
+                  "endpoint": "provider-default",
+                  "adapterVersion": "executor/e2e-default-agent@2",
+                  "policyVersion": "e2e-default-agent/2",
+                  "calls": 2,
+                  "tokenAccounting": "provider",
+                  "inputTokens": 13920,
+                  "outputTokens": 76,
+                  "peakTokensPerCall": 8524,
+                  "cacheReadTokens": 9472
+                },
+                "cache": {
+                  "mode": "missed",
+                  "reason": "no-entry",
+                  "replayedActions": 0,
+                  "totalActions": 0,
+                  "entry": "fa43f07e8722845ae8d9327d2a56b2fbf6172cd9d49eaa7c743f30c74a2cc53a",
+                  "write": "saved"
+                },
+                "observationRevision": "b21",
+                "explanation": "Tapped the delete button for the article titled 'E2E article 1794469375865'. The app navigated to the articles list page, and the deleted article is no longer visible. The delete operation succeeded.",
+                "turns": [
+                  {
+                    "index": 1,
+                    "calls": [
+                      "tap({\"target\":\"n42027\"})"
+                    ],
+                    "outcome": "[tap] Tapped #n42027.\n\nThe screen changed substantially since revision b17. Current screen (revision b19, path /articles.html, 169 nodes):\n#root document \"🦎 GAD | Articles\"\n #n72002 banner\n  #n72003 heading \"🦎 GAD Go to Articles Go to Comments Go to Flashposts Go to Game List Users Statistics || Add Article Upload\"\n   #n72004 link \"🦎 GAD\" href=\"/\"\n   #n72005 link \"Go to Articles\" href=\"/articles.html\"\n    #n72006 button \"Go to Articles\" text=\"Articles\" testid=\"open-articles\" [disabled]\n   #n72007 link \"Go to Comments\" href=\"/comments.html\"\n    #n72008 button \"Go to Comments\" text=\"Comments\"…[truncated]"
+                  },
+                  {
+                    "index": 2,
+                    "calls": [
+                      "complete_step({\"status\":\"passed\",\"summary\":\"Tapped the delete button for the article titled 'E2E article 1794469375865'. The app navigated to the articles list page, and the deleted article is no long…[truncated]"
+                    ],
+                    "outcome": "[complete_step] Step concluded."
+                  }
+                ],
+                "screen": {
+                  "location": "http://localhost:3200/articles.html",
+                  "nodes": 169,
+                  "since": 3,
+                  "changes": [
+                    "changed document \"🦎 GAD | Articles\" (was: document \"🦎 GAD | Article\")",
+                    "added heading \"🦎 GAD Go to Articles Go to Comments Go to Flashposts Go to Game List Users Statistics || Add Article Upload\"",
+                    "added button \"Go to Articles\" text=\"Articles\" testid=\"open-articles\" [disabled]",
+                    "added button \"Add Article\"",
+                    "added link \"Upload\" href=\"/articlesupload.html\"",
+                    "added button \"Upload\"",
+                    "added alert testid=\"alert-popup\"",
+                    "added link \"Prev\" testid=\"prev-button\" href=\"javascript:…\"",
+                    "added link \"Next\" testid=\"next-button\" href=\"javascript:…\"",
+                    "added text=\"Page: 1/13\"",
+                    "added text=\"1\" testid=\"current-page\"",
+                    "added text=\"13\" testid=\"total-pages\""
+                  ],
+                  "more": 147
+                },
+                "source": {
+                  "file": "tests/g1-article.e2e.ts",
+                  "line": 22,
+                  "column": 15
+                }
+              },
+              {
+                "id": "01a1ceb5-af49-7dfc-a34d-cbcd28712c2e:5",
+                "index": 5,
+                "kind": "agent",
+                "api": "agent.assert",
+                "label": "the article \"E2E article 1794469375865\" is no longer shown and the user is on the articles list",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:28.388Z",
+                "durationMs": 10713,
+                "events": [
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-12T07:44:28.388Z",
+                    "durationMs": 12,
+                    "status": "passed",
+                    "bytes": 8738,
+                    "count": 169
+                  },
+                  {
+                    "kind": "model",
+                    "startedAt": "2026-11-12T07:44:28.400Z",
+                    "durationMs": 10602,
+                    "status": "passed",
+                    "name": "agent-judgment-2",
+                    "count": 3634,
+                    "inputTokens": 3557,
+                    "outputTokens": 77
+                  }
+                ],
+                "agent": "default",
+                "artifacts": [
+                  "01a1ceb5-af49-7dfc-a34d-cbcd28712c2e:artifact:1"
+                ],
+                "metrics": {
+                  "modelCalls": 1,
+                  "actionSteps": 0,
+                  "observationBytes": 8738,
+                  "contextBytes": 0,
+                  "ledgerBytes": 0
+                },
+                "model": {
+                  "provider": "github-copilot.chat",
+                  "model": "gpt-4.1",
+                  "endpoint": "provider-default",
+                  "adapterVersion": "ai-sdk/0.23.0",
+                  "policyVersion": "policy-0.3",
+                  "calls": 1,
+                  "tokenAccounting": "provider",
+                  "inputTokens": 3557,
+                  "outputTokens": 77,
+                  "peakTokensPerCall": 3634,
+                  "cacheReadTokens": 0
+                },
+                "observationRevision": "b22",
+                "explanation": "The article titled 'E2E article 1794469375865' does not appear anywhere in the current articles list. The user is on the articles list view, as indicated by the heading and context. Therefore, the instruction holds.",
+                "screen": {
+                  "location": "http://localhost:3200/articles.html",
+                  "nodes": 169,
+                  "since": 4,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g1-article.e2e.ts",
+                  "line": 23,
+                  "column": 15
+                }
+              }
+            ],
+            "appLog": [
+              {
+                "source": "network",
+                "level": "warning",
+                "text": "GET http://localhost:3200/data/users/face.png 404 Not Found",
+                "at": "2026-11-12T07:42:55.909Z",
+                "step": 1
+              },
+              {
+                "source": "network",
+                "level": "warning",
+                "text": "GET http://localhost:3200/data/users/face.png 404 Not Found",
+                "at": "2026-11-12T07:43:40.837Z",
+                "step": 2
+              },
+              {
+                "source": "network",
+                "level": "warning",
+                "text": "GET http://localhost:3200/data/users/face.png 404 Not Found",
+                "at": "2026-11-12T07:44:16.256Z",
+                "step": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "acb1efe44d13b5d7d71e44b7f50058d0439c537b9317f8aeb176ad449dba010d",
+        "testId": "tests/g2-register-ddt.e2e.ts::G2%20kod%3A%20puste%20firstname",
+        "kind": "test",
+        "declarationIndex": 0,
+        "titlePath": [
+          "G2 kod: puste firstname"
+        ],
+        "file": "tests/g2-register-ddt.e2e.ts",
+        "source": {
+          "file": "tests/g2-register-ddt.e2e.ts",
+          "line": 19,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g2",
+          "code"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-42cf-73e3-9c6f-3ba5cfad0c62",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:44:39.119Z",
+            "durationMs": 356,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1ceb7-42cf-73e3-9c6f-3ba5cfad0c62:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/register.html",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:39.122Z",
+                "durationMs": 167,
+                "events": [],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 11,
+                  "column": 13
+                }
+              },
+              {
+                "id": "01a1ceb7-42cf-73e3-9c6f-3ba5cfad0c62:1",
+                "index": 1,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"firstname-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:39.289Z",
+                "durationMs": 68,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:44:39.290Z",
+                    "durationMs": 68,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User First Name\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 0,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-42cf-73e3-9c6f-3ba5cfad0c62:2",
+                "index": 2,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"lastname-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:39.359Z",
+                "durationMs": 14,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:44:39.359Z",
+                    "durationMs": 14,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User Last Name\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 1,
+                  "changes": [
+                    "changed textbox \"Enter User Last Name\" testid=\"lastname-input\" value=\"Tester\" (was: textbox \"Enter User Last Name\" testid=\"lastname-input\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-42cf-73e3-9c6f-3ba5cfad0c62:3",
+                "index": 3,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"email-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:39.374Z",
+                "durationMs": 13,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:44:39.374Z",
+                    "durationMs": 13,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User Email\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 2,
+                  "changes": [
+                    "changed textbox \"Enter User Email\" testid=\"email-input\" value=\"e2e-1794469479121@test.pl\" (was: textbox \"Enter User Email\" testid=\"email-input\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-42cf-73e3-9c6f-3ba5cfad0c62:4",
+                "index": 4,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"password-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:39.387Z",
+                "durationMs": 39,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:44:39.387Z",
+                    "durationMs": 39,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter Password\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 3,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-42cf-73e3-9c6f-3ba5cfad0c62:5",
+                "index": 5,
+                "kind": "locator",
+                "api": "locator.tap",
+                "label": "getByTestId(\"register-button\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:39.426Z",
+                "durationMs": 42,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "tap",
+                    "startedAt": "2026-11-12T07:44:39.426Z",
+                    "durationMs": 42,
+                    "status": "passed",
+                    "detail": "tap button \"Register\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 96,
+                  "since": 4,
+                  "changes": [
+                    "added text=\"This field is required\""
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 13,
+                  "column": 47
+                }
+              },
+              {
+                "id": "01a1ceb7-42cf-73e3-9c6f-3ba5cfad0c62:6",
+                "index": 6,
+                "kind": "assertion",
+                "api": "expect.toHaveText",
+                "label": "locator(\"#octavalidate_firstname\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:39.469Z",
+                "durationMs": 2,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-12T07:44:39.469Z",
+                    "durationMs": 2,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 21,
+                  "column": 65
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "4392dfd48d7d28f81111ca985f9f58baa119252404641cdf837106cea38d46e7",
+        "testId": "tests/g2-register-ddt.e2e.ts::G2%20agent.assert%3A%20puste%20firstname",
+        "kind": "test",
+        "declarationIndex": 1,
+        "titlePath": [
+          "G2 agent.assert: puste firstname"
+        ],
+        "file": "tests/g2-register-ddt.e2e.ts",
+        "source": {
+          "file": "tests/g2-register-ddt.e2e.ts",
+          "line": 24,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g2",
+          "ai"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-4433-748d-9135-8d0f66e916ee",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:44:39.475Z",
+            "durationMs": 16866,
+            "artifacts": [
+              {
+                "id": "01a1ceb7-4433-748d-9135-8d0f66e916ee:artifact:0",
+                "kind": "screenshot",
+                "mediaType": "image/png",
+                "redaction": "complete",
+                "producer": {
+                  "kind": "step",
+                  "stepId": "01a1ceb7-4433-748d-9135-8d0f66e916ee:6"
+                },
+                "path": "g2-register-ddt-g2-agent-assert-puste-firstname-4392dfd48d7d28f8/attempt-1/screenshots/001-assert.png",
+                "size": 55410,
+                "sha256": "7f4c3e2fcc91cb2e2c63999cfd32be1f826e3a9b90837c3c2959a62d7e2e03eb"
+              }
+            ],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1ceb7-4433-748d-9135-8d0f66e916ee:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/register.html",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:39.477Z",
+                "durationMs": 117,
+                "events": [],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 11,
+                  "column": 13
+                }
+              },
+              {
+                "id": "01a1ceb7-4433-748d-9135-8d0f66e916ee:1",
+                "index": 1,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"firstname-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:39.594Z",
+                "durationMs": 51,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:44:39.594Z",
+                    "durationMs": 51,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User First Name\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 0,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-4433-748d-9135-8d0f66e916ee:2",
+                "index": 2,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"lastname-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:39.645Z",
+                "durationMs": 13,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:44:39.645Z",
+                    "durationMs": 13,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User Last Name\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 1,
+                  "changes": [
+                    "changed textbox \"Enter User Last Name\" testid=\"lastname-input\" value=\"Tester\" (was: textbox \"Enter User Last Name\" testid=\"lastname-input\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-4433-748d-9135-8d0f66e916ee:3",
+                "index": 3,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"email-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:39.659Z",
+                "durationMs": 13,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:44:39.659Z",
+                    "durationMs": 13,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User Email\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 2,
+                  "changes": [
+                    "changed textbox \"Enter User Email\" testid=\"email-input\" value=\"e2e-1794469479477@test.pl\" (was: textbox \"Enter User Email\" testid=\"email-input\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-4433-748d-9135-8d0f66e916ee:4",
+                "index": 4,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"password-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:39.672Z",
+                "durationMs": 46,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:44:39.672Z",
+                    "durationMs": 46,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter Password\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 3,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-4433-748d-9135-8d0f66e916ee:5",
+                "index": 5,
+                "kind": "locator",
+                "api": "locator.tap",
+                "label": "getByTestId(\"register-button\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:39.718Z",
+                "durationMs": 37,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "tap",
+                    "startedAt": "2026-11-12T07:44:39.718Z",
+                    "durationMs": 37,
+                    "status": "passed",
+                    "detail": "tap button \"Register\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 96,
+                  "since": 4,
+                  "changes": [
+                    "added text=\"This field is required\""
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 13,
+                  "column": 47
+                }
+              },
+              {
+                "id": "01a1ceb7-4433-748d-9135-8d0f66e916ee:6",
+                "index": 6,
+                "kind": "agent",
+                "api": "agent.assert",
+                "label": "the registration form tells the user that the firstname field is required, and the account was not created",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:39.755Z",
+                "durationMs": 16582,
+                "events": [
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-12T07:44:39.755Z",
+                    "durationMs": 10,
+                    "status": "passed",
+                    "bytes": 5560,
+                    "count": 96
+                  },
+                  {
+                    "kind": "model",
+                    "startedAt": "2026-11-12T07:44:39.765Z",
+                    "durationMs": 16538,
+                    "status": "passed",
+                    "name": "agent-judgment-2",
+                    "count": 3215,
+                    "inputTokens": 3129,
+                    "outputTokens": 86
+                  }
+                ],
+                "agent": "default",
+                "artifacts": [
+                  "01a1ceb7-4433-748d-9135-8d0f66e916ee:artifact:0"
+                ],
+                "metrics": {
+                  "modelCalls": 1,
+                  "actionSteps": 0,
+                  "observationBytes": 5560,
+                  "contextBytes": 0,
+                  "ledgerBytes": 0
+                },
+                "model": {
+                  "provider": "github-copilot.chat",
+                  "model": "gpt-4.1",
+                  "endpoint": "provider-default",
+                  "adapterVersion": "ai-sdk/0.23.0",
+                  "policyVersion": "policy-0.3",
+                  "calls": 1,
+                  "tokenAccounting": "provider",
+                  "inputTokens": 3129,
+                  "outputTokens": 86,
+                  "peakTokensPerCall": 3215,
+                  "cacheReadTokens": 0
+                },
+                "observationRevision": "b1",
+                "explanation": "The registration form displays the message 'This field is required' near the firstname input, indicating the user is told that the firstname field is required. There is no evidence on the screen that the account was created: the form remains visible with no confirmation or navigation away from the registration page.",
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 96,
+                  "since": 5,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 26,
+                  "column": 21
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b09bd720a6dbb492b28c3bccf8f6d9b4f65d2c66afe3a05c38d88c27fce8cc4a",
+        "testId": "tests/g2-register-ddt.e2e.ts::G2%20kod%3A%20puste%20lastname",
+        "kind": "test",
+        "declarationIndex": 2,
+        "titlePath": [
+          "G2 kod: puste lastname"
+        ],
+        "file": "tests/g2-register-ddt.e2e.ts",
+        "source": {
+          "file": "tests/g2-register-ddt.e2e.ts",
+          "line": 19,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g2",
+          "code"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-8615-7554-8f79-4d17c29108a8",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:44:56.341Z",
+            "durationMs": 297,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1ceb7-8615-7554-8f79-4d17c29108a8:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/register.html",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:56.343Z",
+                "durationMs": 147,
+                "events": [],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 11,
+                  "column": 13
+                }
+              },
+              {
+                "id": "01a1ceb7-8615-7554-8f79-4d17c29108a8:1",
+                "index": 1,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"firstname-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:56.490Z",
+                "durationMs": 46,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:44:56.490Z",
+                    "durationMs": 46,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User First Name\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 0,
+                  "changes": [
+                    "changed textbox \"Enter User First Name\" testid=\"firstname-input\" value=\"Ada\" (was: textbox \"Enter User First Name\" testid=\"firstname-input\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-8615-7554-8f79-4d17c29108a8:2",
+                "index": 2,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"lastname-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:56.536Z",
+                "durationMs": 11,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:44:56.536Z",
+                    "durationMs": 11,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User Last Name\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 1,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-8615-7554-8f79-4d17c29108a8:3",
+                "index": 3,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"email-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:56.548Z",
+                "durationMs": 10,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:44:56.548Z",
+                    "durationMs": 10,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User Email\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 2,
+                  "changes": [
+                    "changed textbox \"Enter User Email\" testid=\"email-input\" value=\"e2e-1794469496343@test.pl\" (was: textbox \"Enter User Email\" testid=\"email-input\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-8615-7554-8f79-4d17c29108a8:4",
+                "index": 4,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"password-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:56.559Z",
+                "durationMs": 30,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:44:56.559Z",
+                    "durationMs": 30,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter Password\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 3,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-8615-7554-8f79-4d17c29108a8:5",
+                "index": 5,
+                "kind": "locator",
+                "api": "locator.tap",
+                "label": "getByTestId(\"register-button\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:56.590Z",
+                "durationMs": 42,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "tap",
+                    "startedAt": "2026-11-12T07:44:56.590Z",
+                    "durationMs": 42,
+                    "status": "passed",
+                    "detail": "tap button \"Register\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 96,
+                  "since": 4,
+                  "changes": [
+                    "added text=\"This field is required\""
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 13,
+                  "column": 47
+                }
+              },
+              {
+                "id": "01a1ceb7-8615-7554-8f79-4d17c29108a8:6",
+                "index": 6,
+                "kind": "assertion",
+                "api": "expect.toHaveText",
+                "label": "locator(\"#octavalidate_lastname\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:56.633Z",
+                "durationMs": 2,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-12T07:44:56.633Z",
+                    "durationMs": 2,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 21,
+                  "column": 65
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "efe3555a323c613bb0d17f9e06e29d45402d7c04b8b8a200aafcfb77cff2b464",
+        "testId": "tests/g2-register-ddt.e2e.ts::G2%20agent.assert%3A%20puste%20lastname",
+        "kind": "test",
+        "declarationIndex": 3,
+        "titlePath": [
+          "G2 agent.assert: puste lastname"
+        ],
+        "file": "tests/g2-register-ddt.e2e.ts",
+        "source": {
+          "file": "tests/g2-register-ddt.e2e.ts",
+          "line": 24,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g2",
+          "ai"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-873e-7c31-9fa8-25fe8c53ab11",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:44:56.638Z",
+            "durationMs": 6773,
+            "artifacts": [
+              {
+                "id": "01a1ceb7-873e-7c31-9fa8-25fe8c53ab11:artifact:0",
+                "kind": "screenshot",
+                "mediaType": "image/png",
+                "redaction": "complete",
+                "producer": {
+                  "kind": "step",
+                  "stepId": "01a1ceb7-873e-7c31-9fa8-25fe8c53ab11:6"
+                },
+                "path": "g2-register-ddt-g2-agent-assert-puste-lastname-efe3555a323c613b/attempt-1/screenshots/001-assert.png",
+                "size": 67200,
+                "sha256": "0f114bf1f714d9951270cbba48b1901e5f7fc93bffc68459a8cc725871b2e9c7"
+              }
+            ],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1ceb7-873e-7c31-9fa8-25fe8c53ab11:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/register.html",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:56.640Z",
+                "durationMs": 123,
+                "events": [],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 11,
+                  "column": 13
+                }
+              },
+              {
+                "id": "01a1ceb7-873e-7c31-9fa8-25fe8c53ab11:1",
+                "index": 1,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"firstname-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:56.764Z",
+                "durationMs": 51,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:44:56.764Z",
+                    "durationMs": 51,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User First Name\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 0,
+                  "changes": [
+                    "changed textbox \"Enter User First Name\" testid=\"firstname-input\" value=\"Ada\" (was: textbox \"Enter User First Name\" testid=\"firstname-input\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-873e-7c31-9fa8-25fe8c53ab11:2",
+                "index": 2,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"lastname-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:56.815Z",
+                "durationMs": 14,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:44:56.815Z",
+                    "durationMs": 14,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User Last Name\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 1,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-873e-7c31-9fa8-25fe8c53ab11:3",
+                "index": 3,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"email-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:56.829Z",
+                "durationMs": 12,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:44:56.829Z",
+                    "durationMs": 12,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User Email\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 2,
+                  "changes": [
+                    "changed textbox \"Enter User Email\" testid=\"email-input\" value=\"e2e-1794469496640@test.pl\" (was: textbox \"Enter User Email\" testid=\"email-input\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-873e-7c31-9fa8-25fe8c53ab11:4",
+                "index": 4,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"password-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:56.841Z",
+                "durationMs": 34,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:44:56.841Z",
+                    "durationMs": 34,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter Password\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 3,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-873e-7c31-9fa8-25fe8c53ab11:5",
+                "index": 5,
+                "kind": "locator",
+                "api": "locator.tap",
+                "label": "getByTestId(\"register-button\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:56.876Z",
+                "durationMs": 46,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "tap",
+                    "startedAt": "2026-11-12T07:44:56.876Z",
+                    "durationMs": 46,
+                    "status": "passed",
+                    "detail": "tap button \"Register\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 96,
+                  "since": 4,
+                  "changes": [
+                    "added text=\"This field is required\""
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 13,
+                  "column": 47
+                }
+              },
+              {
+                "id": "01a1ceb7-873e-7c31-9fa8-25fe8c53ab11:6",
+                "index": 6,
+                "kind": "agent",
+                "api": "agent.assert",
+                "label": "the registration form tells the user that the lastname field is required, and the account was not created",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:44:56.922Z",
+                "durationMs": 6482,
+                "events": [
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-12T07:44:56.922Z",
+                    "durationMs": 11,
+                    "status": "passed",
+                    "bytes": 5554,
+                    "count": 96
+                  },
+                  {
+                    "kind": "model",
+                    "startedAt": "2026-11-12T07:44:56.933Z",
+                    "durationMs": 6443,
+                    "status": "passed",
+                    "name": "agent-judgment-2",
+                    "count": 3197,
+                    "inputTokens": 3126,
+                    "outputTokens": 71
+                  }
+                ],
+                "agent": "default",
+                "artifacts": [
+                  "01a1ceb7-873e-7c31-9fa8-25fe8c53ab11:artifact:0"
+                ],
+                "metrics": {
+                  "modelCalls": 1,
+                  "actionSteps": 0,
+                  "observationBytes": 5554,
+                  "contextBytes": 0,
+                  "ledgerBytes": 0
+                },
+                "model": {
+                  "provider": "github-copilot.chat",
+                  "model": "gpt-4.1",
+                  "endpoint": "provider-default",
+                  "adapterVersion": "ai-sdk/0.23.0",
+                  "policyVersion": "policy-0.3",
+                  "calls": 1,
+                  "tokenAccounting": "provider",
+                  "inputTokens": 3126,
+                  "outputTokens": 71,
+                  "peakTokensPerCall": 3197,
+                  "cacheReadTokens": 0
+                },
+                "observationRevision": "b1",
+                "explanation": "The registration form shows a validation message 'This field is required' under the lastname field (which is empty), and the form still shows the register button with all fields present, indicating the account was not created.",
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 96,
+                  "since": 5,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 26,
+                  "column": 21
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "5823d3f5bcb632dc06263aebe43ef3110b9e2cdb92f171df2566cc7b06d096e9",
+        "testId": "tests/g2-register-ddt.e2e.ts::G2%20kod%3A%20puste%20email",
+        "kind": "test",
+        "declarationIndex": 4,
+        "titlePath": [
+          "G2 kod: puste email"
+        ],
+        "file": "tests/g2-register-ddt.e2e.ts",
+        "source": {
+          "file": "tests/g2-register-ddt.e2e.ts",
+          "line": 19,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g2",
+          "code"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-a1b4-7dc7-b36c-800ae04e818f",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:45:03.412Z",
+            "durationMs": 273,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1ceb7-a1b4-7dc7-b36c-800ae04e818f:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/register.html",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:03.416Z",
+                "durationMs": 118,
+                "events": [],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 11,
+                  "column": 13
+                }
+              },
+              {
+                "id": "01a1ceb7-a1b4-7dc7-b36c-800ae04e818f:1",
+                "index": 1,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"firstname-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:03.534Z",
+                "durationMs": 46,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:45:03.534Z",
+                    "durationMs": 46,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User First Name\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 0,
+                  "changes": [
+                    "changed textbox \"Enter User First Name\" testid=\"firstname-input\" value=\"Ada\" (was: textbox \"Enter User First Name\" testid=\"firstname-input\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-a1b4-7dc7-b36c-800ae04e818f:2",
+                "index": 2,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"lastname-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:03.580Z",
+                "durationMs": 11,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:45:03.580Z",
+                    "durationMs": 11,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User Last Name\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 1,
+                  "changes": [
+                    "changed textbox \"Enter User Last Name\" testid=\"lastname-input\" value=\"Tester\" (was: textbox \"Enter User Last Name\" testid=\"lastname-input\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-a1b4-7dc7-b36c-800ae04e818f:3",
+                "index": 3,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"email-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:03.592Z",
+                "durationMs": 11,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:45:03.592Z",
+                    "durationMs": 11,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User Email\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 2,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-a1b4-7dc7-b36c-800ae04e818f:4",
+                "index": 4,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"password-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:03.603Z",
+                "durationMs": 37,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:45:03.603Z",
+                    "durationMs": 36,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter Password\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 3,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-a1b4-7dc7-b36c-800ae04e818f:5",
+                "index": 5,
+                "kind": "locator",
+                "api": "locator.tap",
+                "label": "getByTestId(\"register-button\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:03.640Z",
+                "durationMs": 40,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "tap",
+                    "startedAt": "2026-11-12T07:45:03.640Z",
+                    "durationMs": 40,
+                    "status": "passed",
+                    "detail": "tap button \"Register\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 96,
+                  "since": 4,
+                  "changes": [
+                    "added text=\"This field is required\""
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 13,
+                  "column": 47
+                }
+              },
+              {
+                "id": "01a1ceb7-a1b4-7dc7-b36c-800ae04e818f:6",
+                "index": 6,
+                "kind": "assertion",
+                "api": "expect.toHaveText",
+                "label": "locator(\"#octavalidate_email\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:03.681Z",
+                "durationMs": 1,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-12T07:45:03.681Z",
+                    "durationMs": 1,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 21,
+                  "column": 65
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "9e621e68156a82acaef869c7c64657fb2b295f8bea203f60b6e379726bc6d471",
+        "testId": "tests/g2-register-ddt.e2e.ts::G2%20agent.assert%3A%20puste%20email",
+        "kind": "test",
+        "declarationIndex": 5,
+        "titlePath": [
+          "G2 agent.assert: puste email"
+        ],
+        "file": "tests/g2-register-ddt.e2e.ts",
+        "source": {
+          "file": "tests/g2-register-ddt.e2e.ts",
+          "line": 24,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g2",
+          "ai"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-a2c5-7399-ad2c-30f0f8b4edf5",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:45:03.685Z",
+            "durationMs": 12584,
+            "artifacts": [
+              {
+                "id": "01a1ceb7-a2c5-7399-ad2c-30f0f8b4edf5:artifact:0",
+                "kind": "screenshot",
+                "mediaType": "image/png",
+                "redaction": "complete",
+                "producer": {
+                  "kind": "step",
+                  "stepId": "01a1ceb7-a2c5-7399-ad2c-30f0f8b4edf5:6"
+                },
+                "path": "g2-register-ddt-g2-agent-assert-puste-email-9e621e68156a82ac/attempt-1/screenshots/001-assert.png",
+                "size": 54903,
+                "sha256": "100dbad2419e14da9866ae8be46ec90c07ee6ac881c8964a3ac47a3155c04588"
+              }
+            ],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1ceb7-a2c5-7399-ad2c-30f0f8b4edf5:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/register.html",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:03.687Z",
+                "durationMs": 113,
+                "events": [],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 11,
+                  "column": 13
+                }
+              },
+              {
+                "id": "01a1ceb7-a2c5-7399-ad2c-30f0f8b4edf5:1",
+                "index": 1,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"firstname-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:03.801Z",
+                "durationMs": 44,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:45:03.801Z",
+                    "durationMs": 44,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User First Name\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 0,
+                  "changes": [
+                    "changed textbox \"Enter User First Name\" testid=\"firstname-input\" value=\"Ada\" (was: textbox \"Enter User First Name\" testid=\"firstname-input\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-a2c5-7399-ad2c-30f0f8b4edf5:2",
+                "index": 2,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"lastname-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:03.845Z",
+                "durationMs": 11,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:45:03.845Z",
+                    "durationMs": 11,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User Last Name\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 1,
+                  "changes": [
+                    "changed textbox \"Enter User Last Name\" testid=\"lastname-input\" value=\"Tester\" (was: textbox \"Enter User Last Name\" testid=\"lastname-input\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-a2c5-7399-ad2c-30f0f8b4edf5:3",
+                "index": 3,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"email-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:03.856Z",
+                "durationMs": 11,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:45:03.856Z",
+                    "durationMs": 11,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User Email\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 2,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-a2c5-7399-ad2c-30f0f8b4edf5:4",
+                "index": 4,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"password-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:03.867Z",
+                "durationMs": 35,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:45:03.867Z",
+                    "durationMs": 35,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter Password\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 3,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-a2c5-7399-ad2c-30f0f8b4edf5:5",
+                "index": 5,
+                "kind": "locator",
+                "api": "locator.tap",
+                "label": "getByTestId(\"register-button\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:03.902Z",
+                "durationMs": 46,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "tap",
+                    "startedAt": "2026-11-12T07:45:03.902Z",
+                    "durationMs": 46,
+                    "status": "passed",
+                    "detail": "tap button \"Register\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 96,
+                  "since": 4,
+                  "changes": [
+                    "added text=\"This field is required\""
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 13,
+                  "column": 47
+                }
+              },
+              {
+                "id": "01a1ceb7-a2c5-7399-ad2c-30f0f8b4edf5:6",
+                "index": 6,
+                "kind": "agent",
+                "api": "agent.assert",
+                "label": "the registration form tells the user that the email field is required, and the account was not created",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:03.948Z",
+                "durationMs": 12317,
+                "events": [
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-12T07:45:03.948Z",
+                    "durationMs": 8,
+                    "status": "passed",
+                    "bytes": 5533,
+                    "count": 96
+                  },
+                  {
+                    "kind": "model",
+                    "startedAt": "2026-11-12T07:45:03.956Z",
+                    "durationMs": 12280,
+                    "status": "passed",
+                    "name": "agent-judgment-2",
+                    "count": 3209,
+                    "inputTokens": 3122,
+                    "outputTokens": 87
+                  }
+                ],
+                "agent": "default",
+                "artifacts": [
+                  "01a1ceb7-a2c5-7399-ad2c-30f0f8b4edf5:artifact:0"
+                ],
+                "metrics": {
+                  "modelCalls": 1,
+                  "actionSteps": 0,
+                  "observationBytes": 5533,
+                  "contextBytes": 0,
+                  "ledgerBytes": 0
+                },
+                "model": {
+                  "provider": "github-copilot.chat",
+                  "model": "gpt-4.1",
+                  "endpoint": "provider-default",
+                  "adapterVersion": "ai-sdk/0.23.0",
+                  "policyVersion": "policy-0.3",
+                  "calls": 1,
+                  "tokenAccounting": "provider",
+                  "inputTokens": 3122,
+                  "outputTokens": 87,
+                  "peakTokensPerCall": 3209,
+                  "cacheReadTokens": 0
+                },
+                "observationRevision": "b1",
+                "explanation": "The registration form indicates 'This field is required' under the email input, showing the user is told the email field is required. The presence of the registration form and register button implies the account was not created, as there is no confirmation of account creation or navigation away from the registration screen.",
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 96,
+                  "since": 5,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 26,
+                  "column": 21
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "a1ee725b819aa9662df6baea5777e0c115c55a3d5b59f7d09f031998d00f50f3",
+        "testId": "tests/g2-register-ddt.e2e.ts::G2%20kod%3A%20puste%20password",
+        "kind": "test",
+        "declarationIndex": 6,
+        "titlePath": [
+          "G2 kod: puste password"
+        ],
+        "file": "tests/g2-register-ddt.e2e.ts",
+        "source": {
+          "file": "tests/g2-register-ddt.e2e.ts",
+          "line": 19,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g2",
+          "code"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-d3ed-7d24-ab77-6d7e1f6b6866",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:45:16.269Z",
+            "durationMs": 286,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1ceb7-d3ed-7d24-ab77-6d7e1f6b6866:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/register.html",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:16.272Z",
+                "durationMs": 131,
+                "events": [],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 11,
+                  "column": 13
+                }
+              },
+              {
+                "id": "01a1ceb7-d3ed-7d24-ab77-6d7e1f6b6866:1",
+                "index": 1,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"firstname-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:16.404Z",
+                "durationMs": 45,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:45:16.404Z",
+                    "durationMs": 45,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User First Name\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 0,
+                  "changes": [
+                    "changed textbox \"Enter User First Name\" testid=\"firstname-input\" value=\"Ada\" (was: textbox \"Enter User First Name\" testid=\"firstname-input\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-d3ed-7d24-ab77-6d7e1f6b6866:2",
+                "index": 2,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"lastname-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:16.449Z",
+                "durationMs": 11,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:45:16.449Z",
+                    "durationMs": 11,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User Last Name\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 1,
+                  "changes": [
+                    "changed textbox \"Enter User Last Name\" testid=\"lastname-input\" value=\"Tester\" (was: textbox \"Enter User Last Name\" testid=\"lastname-input\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-d3ed-7d24-ab77-6d7e1f6b6866:3",
+                "index": 3,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"email-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:16.461Z",
+                "durationMs": 11,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:45:16.461Z",
+                    "durationMs": 11,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User Email\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 2,
+                  "changes": [
+                    "changed textbox \"Enter User Email\" testid=\"email-input\" value=\"e2e-1794469516272@test.pl\" (was: textbox \"Enter User Email\" testid=\"email-input\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-d3ed-7d24-ab77-6d7e1f6b6866:4",
+                "index": 4,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"password-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:16.472Z",
+                "durationMs": 34,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:45:16.472Z",
+                    "durationMs": 34,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter Password\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 3,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-d3ed-7d24-ab77-6d7e1f6b6866:5",
+                "index": 5,
+                "kind": "locator",
+                "api": "locator.tap",
+                "label": "getByTestId(\"register-button\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:16.506Z",
+                "durationMs": 43,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "tap",
+                    "startedAt": "2026-11-12T07:45:16.506Z",
+                    "durationMs": 43,
+                    "status": "passed",
+                    "detail": "tap button \"Register\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 96,
+                  "since": 4,
+                  "changes": [
+                    "added text=\"This field is required\""
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 13,
+                  "column": 47
+                }
+              },
+              {
+                "id": "01a1ceb7-d3ed-7d24-ab77-6d7e1f6b6866:6",
+                "index": 6,
+                "kind": "assertion",
+                "api": "expect.toHaveText",
+                "label": "locator(\"#octavalidate_password\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:16.549Z",
+                "durationMs": 2,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-12T07:45:16.549Z",
+                    "durationMs": 2,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 21,
+                  "column": 65
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "60fedc3a4ef2822749a0505cdbd0fe6d6655603f8e9033f1a1589d9d868680c7",
+        "testId": "tests/g2-register-ddt.e2e.ts::G2%20agent.assert%3A%20puste%20password",
+        "kind": "test",
+        "declarationIndex": 7,
+        "titlePath": [
+          "G2 agent.assert: puste password"
+        ],
+        "file": "tests/g2-register-ddt.e2e.ts",
+        "source": {
+          "file": "tests/g2-register-ddt.e2e.ts",
+          "line": 24,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g2",
+          "ai"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-d50b-7307-a1d8-b3d45de8d80b",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:45:16.555Z",
+            "durationMs": 5587,
+            "artifacts": [
+              {
+                "id": "01a1ceb7-d50b-7307-a1d8-b3d45de8d80b:artifact:0",
+                "kind": "screenshot",
+                "mediaType": "image/png",
+                "redaction": "complete",
+                "producer": {
+                  "kind": "step",
+                  "stepId": "01a1ceb7-d50b-7307-a1d8-b3d45de8d80b:6"
+                },
+                "path": "g2-register-ddt-g2-agent-assert-puste-password-60fedc3a4ef28227/attempt-1/screenshots/001-assert.png",
+                "size": 55661,
+                "sha256": "0a0cd68e2aa72876a2428525b7a8fc5a40da6b9d93800cd694acb8471f9001bc"
+              }
+            ],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1ceb7-d50b-7307-a1d8-b3d45de8d80b:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/register.html",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:16.558Z",
+                "durationMs": 115,
+                "events": [],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 11,
+                  "column": 13
+                }
+              },
+              {
+                "id": "01a1ceb7-d50b-7307-a1d8-b3d45de8d80b:1",
+                "index": 1,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"firstname-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:16.673Z",
+                "durationMs": 45,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:45:16.673Z",
+                    "durationMs": 45,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User First Name\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 0,
+                  "changes": [
+                    "changed textbox \"Enter User First Name\" testid=\"firstname-input\" value=\"Ada\" (was: textbox \"Enter User First Name\" testid=\"firstname-input\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-d50b-7307-a1d8-b3d45de8d80b:2",
+                "index": 2,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"lastname-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:16.718Z",
+                "durationMs": 11,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:45:16.719Z",
+                    "durationMs": 11,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User Last Name\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 1,
+                  "changes": [
+                    "changed textbox \"Enter User Last Name\" testid=\"lastname-input\" value=\"Tester\" (was: textbox \"Enter User Last Name\" testid=\"lastname-input\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-d50b-7307-a1d8-b3d45de8d80b:3",
+                "index": 3,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"email-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:16.731Z",
+                "durationMs": 10,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:45:16.731Z",
+                    "durationMs": 10,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User Email\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 2,
+                  "changes": [
+                    "changed textbox \"Enter User Email\" testid=\"email-input\" value=\"e2e-1794469516558@test.pl\" (was: textbox \"Enter User Email\" testid=\"email-input\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-d50b-7307-a1d8-b3d45de8d80b:4",
+                "index": 4,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByTestId(\"password-input\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:16.742Z",
+                "durationMs": 29,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:45:16.742Z",
+                    "durationMs": 29,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter Password\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 95,
+                  "since": 3,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 12,
+                  "column": 66
+                }
+              },
+              {
+                "id": "01a1ceb7-d50b-7307-a1d8-b3d45de8d80b:5",
+                "index": 5,
+                "kind": "locator",
+                "api": "locator.tap",
+                "label": "getByTestId(\"register-button\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:16.771Z",
+                "durationMs": 48,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "tap",
+                    "startedAt": "2026-11-12T07:45:16.771Z",
+                    "durationMs": 48,
+                    "status": "passed",
+                    "detail": "tap button \"Register\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 96,
+                  "since": 4,
+                  "changes": [
+                    "added text=\"This field is required\""
+                  ]
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 13,
+                  "column": 47
+                }
+              },
+              {
+                "id": "01a1ceb7-d50b-7307-a1d8-b3d45de8d80b:6",
+                "index": 6,
+                "kind": "agent",
+                "api": "agent.assert",
+                "label": "the registration form tells the user that the password field is required, and the account was not created",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:45:16.820Z",
+                "durationMs": 5318,
+                "events": [
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-12T07:45:16.820Z",
+                    "durationMs": 9,
+                    "status": "passed",
+                    "bytes": 5573,
+                    "count": 96
+                  },
+                  {
+                    "kind": "model",
+                    "startedAt": "2026-11-12T07:45:16.829Z",
+                    "durationMs": 5278,
+                    "status": "passed",
+                    "name": "agent-judgment-2",
+                    "count": 3198,
+                    "inputTokens": 3132,
+                    "outputTokens": 66
+                  }
+                ],
+                "agent": "default",
+                "artifacts": [
+                  "01a1ceb7-d50b-7307-a1d8-b3d45de8d80b:artifact:0"
+                ],
+                "metrics": {
+                  "modelCalls": 1,
+                  "actionSteps": 0,
+                  "observationBytes": 5573,
+                  "contextBytes": 0,
+                  "ledgerBytes": 0
+                },
+                "model": {
+                  "provider": "github-copilot.chat",
+                  "model": "gpt-4.1",
+                  "endpoint": "provider-default",
+                  "adapterVersion": "ai-sdk/0.23.0",
+                  "policyVersion": "policy-0.3",
+                  "calls": 1,
+                  "tokenAccounting": "provider",
+                  "inputTokens": 3132,
+                  "outputTokens": 66,
+                  "peakTokensPerCall": 3198,
+                  "cacheReadTokens": 0
+                },
+                "observationRevision": "b1",
+                "explanation": "The registration form displays the message 'This field is required' near the password field and there is no indication that an account was created (e.g., no redirect or success message).",
+                "screen": {
+                  "location": "http://localhost:3200/register.html",
+                  "nodes": 96,
+                  "since": 5,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/g2-register-ddt.e2e.ts",
+                  "line": 26,
+                  "column": 21
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "6790961a8a18412eba05ccd97367ae0bf8137e8ed010a0fdfde028f0dbcb6494",
+        "testId": "tests/g3-users-api.e2e.ts::G3%20API%3A%20poprawny%20u%C5%BCytkownik",
+        "kind": "test",
+        "declarationIndex": 0,
+        "titlePath": [
+          "G3 API: poprawny użytkownik"
+        ],
+        "file": "tests/g3-users-api.e2e.ts",
+        "source": {
+          "file": "tests/g3-users-api.e2e.ts",
+          "line": 11,
+          "column": 1
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g3"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-eae3-72eb-aafb-819f0a70aa6b",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:45:22.147Z",
+            "durationMs": 116,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "steps": []
+          }
+        ]
+      },
+      {
+        "id": "294c437bfd69e81eb6dddaff6b401905c5ddaae3d75df742ae23b44e1809e88d",
+        "testId": "tests/g3-users-api.e2e.ts::G3%20API%3A%20niestandardowe%20firstname%20%E2%80%9Eundefined%E2%80%9D",
+        "kind": "test",
+        "declarationIndex": 1,
+        "titlePath": [
+          "G3 API: niestandardowe firstname „undefined”"
+        ],
+        "file": "tests/g3-users-api.e2e.ts",
+        "source": {
+          "file": "tests/g3-users-api.e2e.ts",
+          "line": 18,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g3"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-eb57-7a72-bf0f-c61b5ea19f1b",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:45:22.263Z",
+            "durationMs": 114,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "steps": []
+          }
+        ]
+      },
+      {
+        "id": "3995f3e662fa25539de663e55a74e5547e41e28df01ac76333baed8359f7a7b1",
+        "testId": "tests/g3-users-api.e2e.ts::G3%20API%3A%20niestandardowe%20firstname%20%E2%80%9Enull%E2%80%9D",
+        "kind": "test",
+        "declarationIndex": 2,
+        "titlePath": [
+          "G3 API: niestandardowe firstname „null”"
+        ],
+        "file": "tests/g3-users-api.e2e.ts",
+        "source": {
+          "file": "tests/g3-users-api.e2e.ts",
+          "line": 18,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g3"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-ebc9-7d05-80c4-2555583102c9",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:45:22.378Z",
+            "durationMs": 115,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "steps": []
+          }
+        ]
+      },
+      {
+        "id": "73a5b8c59c83fbe00afbff9e36ec26b4220420e4418eefe1d8bb060383ba0baa",
+        "testId": "tests/g3-users-api.e2e.ts::G3%20API%3A%20niestandardowe%20firstname%20%E2%80%9ENULL%E2%80%9D",
+        "kind": "test",
+        "declarationIndex": 3,
+        "titlePath": [
+          "G3 API: niestandardowe firstname „NULL”"
+        ],
+        "file": "tests/g3-users-api.e2e.ts",
+        "source": {
+          "file": "tests/g3-users-api.e2e.ts",
+          "line": 18,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g3"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-ec3d-7508-942a-02f4e1aa9df1",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:45:22.493Z",
+            "durationMs": 113,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "steps": []
+          }
+        ]
+      },
+      {
+        "id": "ef7a9c4bf8a6f80936fc80ff62ffd825a9edebf06bcd3fc1e246785537823c08",
+        "testId": "tests/g3-users-api.e2e.ts::G3%20API%3A%20niestandardowe%20firstname%20%E2%80%9E%28null%29%E2%80%9D",
+        "kind": "test",
+        "declarationIndex": 4,
+        "titlePath": [
+          "G3 API: niestandardowe firstname „(null)”"
+        ],
+        "file": "tests/g3-users-api.e2e.ts",
+        "source": {
+          "file": "tests/g3-users-api.e2e.ts",
+          "line": 18,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g3"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-ecae-7659-8209-5fc4c8808913",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:45:22.606Z",
+            "durationMs": 113,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "steps": []
+          }
+        ]
+      },
+      {
+        "id": "0beb6492b3545e0cc5f6253adf98c519f50908818b2482fdf756dad142376153",
+        "testId": "tests/g3-users-api.e2e.ts::G3%20API%3A%20niestandardowe%20firstname%20%E2%80%9Enil%E2%80%9D",
+        "kind": "test",
+        "declarationIndex": 5,
+        "titlePath": [
+          "G3 API: niestandardowe firstname „nil”"
+        ],
+        "file": "tests/g3-users-api.e2e.ts",
+        "source": {
+          "file": "tests/g3-users-api.e2e.ts",
+          "line": 18,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g3"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-ed1f-7a8e-8bf4-c9403eab2f54",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:45:22.719Z",
+            "durationMs": 118,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "steps": []
+          }
+        ]
+      },
+      {
+        "id": "2c2303c9ec7476729aff89b287b9bb18e67f032f0a80449ad7d691eb130adac3",
+        "testId": "tests/g3-users-api.e2e.ts::G3%20API%3A%20niestandardowe%20firstname%20%E2%80%9Etrue%E2%80%9D",
+        "kind": "test",
+        "declarationIndex": 6,
+        "titlePath": [
+          "G3 API: niestandardowe firstname „true”"
+        ],
+        "file": "tests/g3-users-api.e2e.ts",
+        "source": {
+          "file": "tests/g3-users-api.e2e.ts",
+          "line": 18,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g3"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-ed95-7c01-ada9-3fea8ea31c8c",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:45:22.837Z",
+            "durationMs": 120,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "steps": []
+          }
+        ]
+      },
+      {
+        "id": "d596c290d246c99ba599be6aff8b771de2552429e8dce4b92367436df8d174dd",
+        "testId": "tests/g3-users-api.e2e.ts::G3%20API%3A%20niestandardowe%20firstname%20%E2%80%9Efalse%E2%80%9D",
+        "kind": "test",
+        "declarationIndex": 7,
+        "titlePath": [
+          "G3 API: niestandardowe firstname „false”"
+        ],
+        "file": "tests/g3-users-api.e2e.ts",
+        "source": {
+          "file": "tests/g3-users-api.e2e.ts",
+          "line": 18,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g3"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-ee0d-7609-960d-c6345ff37931",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:45:22.957Z",
+            "durationMs": 115,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "steps": []
+          }
+        ]
+      },
+      {
+        "id": "6e565ab8463f22fe0004b1cceea9da7f01cb51a605b8eb08aebd3a8be3c3b51c",
+        "testId": "tests/g3-users-api.e2e.ts::G3%20API%3A%20puste%20email%20%E2%86%92%20422",
+        "kind": "test",
+        "declarationIndex": 8,
+        "titlePath": [
+          "G3 API: puste email → 422"
+        ],
+        "file": "tests/g3-users-api.e2e.ts",
+        "source": {
+          "file": "tests/g3-users-api.e2e.ts",
+          "line": 24,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g3"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-ee80-7ee8-9402-7ba94172afbb",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:45:23.073Z",
+            "durationMs": 8,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "steps": []
+          }
+        ]
+      },
+      {
+        "id": "6cee3cbf725ab0d11ebdfd5be8a41669e76deb14ac2a866e649e5ce69fb458b4",
+        "testId": "tests/g3-users-api.e2e.ts::G3%20API%3A%20brak%20pola%20email%20%E2%86%92%20422",
+        "kind": "test",
+        "declarationIndex": 9,
+        "titlePath": [
+          "G3 API: brak pola email → 422"
+        ],
+        "file": "tests/g3-users-api.e2e.ts",
+        "source": {
+          "file": "tests/g3-users-api.e2e.ts",
+          "line": 27,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g3"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-ee89-74b9-9638-975ea205eeaa",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:45:23.081Z",
+            "durationMs": 6,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "steps": []
+          }
+        ]
+      },
+      {
+        "id": "9384ff6717ca13bce79d01d697271b70ad5decd7df28f63b8ad9d29ad6213fa1",
+        "testId": "tests/g3-users-api.e2e.ts::G3%20API%3A%20puste%20firstname%20%E2%86%92%20422",
+        "kind": "test",
+        "declarationIndex": 10,
+        "titlePath": [
+          "G3 API: puste firstname → 422"
+        ],
+        "file": "tests/g3-users-api.e2e.ts",
+        "source": {
+          "file": "tests/g3-users-api.e2e.ts",
+          "line": 24,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g3"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-ee8f-752a-b672-4adc9b22b9fa",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:45:23.087Z",
+            "durationMs": 9,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "steps": []
+          }
+        ]
+      },
+      {
+        "id": "57761b44f255c798602405ebd41a80dcfbe6a73fef89dd455cd2ebba10b20239",
+        "testId": "tests/g3-users-api.e2e.ts::G3%20API%3A%20brak%20pola%20firstname%20%E2%86%92%20422",
+        "kind": "test",
+        "declarationIndex": 11,
+        "titlePath": [
+          "G3 API: brak pola firstname → 422"
+        ],
+        "file": "tests/g3-users-api.e2e.ts",
+        "source": {
+          "file": "tests/g3-users-api.e2e.ts",
+          "line": 27,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g3"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-ee98-7d5e-9096-114c9bd226d3",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:45:23.096Z",
+            "durationMs": 5,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "steps": []
+          }
+        ]
+      },
+      {
+        "id": "7a6117fbf88194781715efbb7d603016549589193c9b2e553b9b32097152aa27",
+        "testId": "tests/g3-users-api.e2e.ts::G3%20API%3A%20puste%20lastname%20%E2%86%92%20422",
+        "kind": "test",
+        "declarationIndex": 12,
+        "titlePath": [
+          "G3 API: puste lastname → 422"
+        ],
+        "file": "tests/g3-users-api.e2e.ts",
+        "source": {
+          "file": "tests/g3-users-api.e2e.ts",
+          "line": 24,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g3"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-ee9d-7f66-afd7-2f2cddebd0fc",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:45:23.101Z",
+            "durationMs": 2,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "steps": []
+          }
+        ]
+      },
+      {
+        "id": "2b6d06cea1ac59646f81e93c9b5ed42123a8717c697c7e2ed5f1027c4262ca0e",
+        "testId": "tests/g3-users-api.e2e.ts::G3%20API%3A%20brak%20pola%20lastname%20%E2%86%92%20422",
+        "kind": "test",
+        "declarationIndex": 13,
+        "titlePath": [
+          "G3 API: brak pola lastname → 422"
+        ],
+        "file": "tests/g3-users-api.e2e.ts",
+        "source": {
+          "file": "tests/g3-users-api.e2e.ts",
+          "line": 27,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g3"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-ee9f-7539-b034-51d0a901d014",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:45:23.103Z",
+            "durationMs": 4,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "steps": []
+          }
+        ]
+      },
+      {
+        "id": "fed6fa5d0f8e2eb9ad1f8cf72539162df22ec8304fe2f1156d0f1ed6f146057d",
+        "testId": "tests/g3-users-api.e2e.ts::G3%20API%3A%20puste%20password%20%E2%86%92%20422",
+        "kind": "test",
+        "declarationIndex": 14,
+        "titlePath": [
+          "G3 API: puste password → 422"
+        ],
+        "file": "tests/g3-users-api.e2e.ts",
+        "source": {
+          "file": "tests/g3-users-api.e2e.ts",
+          "line": 24,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g3"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-eea3-7587-bdd8-878565fb8ecf",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:45:23.107Z",
+            "durationMs": 3,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "steps": []
+          }
+        ]
+      },
+      {
+        "id": "3901cf223d918be572fa889977da455715ebae2b48a298db39c3a5ad467ebe82",
+        "testId": "tests/g3-users-api.e2e.ts::G3%20API%3A%20brak%20pola%20password%20%E2%86%92%20422",
+        "kind": "test",
+        "declarationIndex": 15,
+        "titlePath": [
+          "G3 API: brak pola password → 422"
+        ],
+        "file": "tests/g3-users-api.e2e.ts",
+        "source": {
+          "file": "tests/g3-users-api.e2e.ts",
+          "line": 27,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g3"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-eea6-733d-8654-9939c1641e26",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:45:23.110Z",
+            "durationMs": 2,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "steps": []
+          }
+        ]
+      },
+      {
+        "id": "88171644d6cb2211203d68f9734b1af662b649a17aab90a2a76f73d8d20154e7",
+        "testId": "tests/g3-users-api.e2e.ts::G3%20API%3A%20puste%20avatar%20%E2%86%92%20422",
+        "kind": "test",
+        "declarationIndex": 16,
+        "titlePath": [
+          "G3 API: puste avatar → 422"
+        ],
+        "file": "tests/g3-users-api.e2e.ts",
+        "source": {
+          "file": "tests/g3-users-api.e2e.ts",
+          "line": 24,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g3"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-eea8-7795-af10-0e0eb6db97d5",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:45:23.113Z",
+            "durationMs": 2,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "steps": []
+          }
+        ]
+      },
+      {
+        "id": "0506b836b97202d33c5ac53b45b583c83816e5b516fca3997bd45dbb2547e2ed",
+        "testId": "tests/g3-users-api.e2e.ts::G3%20API%3A%20brak%20pola%20avatar%20%E2%86%92%20422",
+        "kind": "test",
+        "declarationIndex": 17,
+        "titlePath": [
+          "G3 API: brak pola avatar → 422"
+        ],
+        "file": "tests/g3-users-api.e2e.ts",
+        "source": {
+          "file": "tests/g3-users-api.e2e.ts",
+          "line": 27,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "g3"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb7-eeab-75bd-9c6d-9a06053f12ca",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:45:23.115Z",
+            "durationMs": 3,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "steps": []
+          }
+        ]
+      },
+      {
+        "id": "3aa053b0adea1b43d70e62c115310a7ef61338f28c97a04683464ea51f6a8d20",
+        "testId": "setup::tests/gad.setup.e2e.ts::logowanie%20do%20GAD",
+        "kind": "setup",
+        "declarationIndex": 0,
+        "titlePath": [
+          "logowanie do GAD"
+        ],
+        "file": "tests/gad.setup.e2e.ts",
+        "source": {
+          "file": "tests/gad.setup.e2e.ts",
+          "line": 6,
+          "column": 6
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ceb4-c7ce-7dec-9cde-aecf5cb9d237",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-12T07:41:56.558Z",
+            "durationMs": 721,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1ceb4-c7ce-7dec-9cde-aecf5cb9d237:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/login/",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:41:56.952Z",
+                "durationMs": 117,
+                "events": [],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/login/",
+                  "nodes": 32,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/gad.setup.e2e.ts",
+                  "line": 16,
+                  "column": 13
+                }
+              },
+              {
+                "id": "01a1ceb4-c7ce-7dec-9cde-aecf5cb9d237:1",
+                "index": 1,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByPlaceholder(\"Enter User Email\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:41:57.070Z",
+                "durationMs": 60,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:41:57.070Z",
+                    "durationMs": 60,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter User Email\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/login/",
+                  "nodes": 32,
+                  "since": 0,
+                  "changes": [
+                    "changed textbox \"Enter User Email\" value=\"e2e-agent@test.pl\" (was: textbox \"Enter User Email\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/gad.setup.e2e.ts",
+                  "line": 17,
+                  "column": 53
+                }
+              },
+              {
+                "id": "01a1ceb4-c7ce-7dec-9cde-aecf5cb9d237:2",
+                "index": 2,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByPlaceholder(\"Enter Password\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:41:57.131Z",
+                "durationMs": 34,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-12T07:41:57.131Z",
+                    "durationMs": 34,
+                    "status": "passed",
+                    "detail": "fill textbox \"Enter Password\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/login/",
+                  "nodes": 32,
+                  "since": 1,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/gad.setup.e2e.ts",
+                  "line": 18,
+                  "column": 51
+                }
+              },
+              {
+                "id": "01a1ceb4-c7ce-7dec-9cde-aecf5cb9d237:3",
+                "index": 3,
+                "kind": "locator",
+                "api": "locator.tap",
+                "label": "getByRole(\"button\", name: \"LogIn\")",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:41:57.166Z",
+                "durationMs": 103,
+                "events": [
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-12T07:41:57.227Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3200/welcome"
+                  },
+                  {
+                    "kind": "engine",
+                    "name": "tap",
+                    "startedAt": "2026-11-12T07:41:57.166Z",
+                    "durationMs": 103,
+                    "status": "passed",
+                    "detail": "tap button \"LogIn\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3200/welcome",
+                  "nodes": 56,
+                  "since": 2,
+                  "changes": [
+                    "changed document \"🦎 GAD | Welcome\" (was: document \"🦎 GAD | Login\")",
+                    "added heading \"🦎 GAD Go to Articles Go to Comments Go to Flashposts Go to Game List Users Statistics\"",
+                    "added link \"Users\" href=\"/users.html\"",
+                    "added button \"Users\" testid=\"open-users\"",
+                    "added link \"Statistics\" href=\"/stats/stats.html\"",
+                    "added button \"Statistics\" testid=\"open-stats\"",
+                    "added heading \"Hi e2e-agent@test.pl!\" testid=\"hello\"",
+                    "added heading \"Session will expire in: Counting time...\" testid=\"countDown\"",
+                    "added text=\"Quick Navigation\"",
+                    "added link \"My profile\" href=\"/user.html?…\"",
+                    "added button \"My profile\"",
+                    "added link \"My articles\" href=\"/articles.html?…\""
+                  ],
+                  "more": 31
+                },
+                "source": {
+                  "file": "tests/gad.setup.e2e.ts",
+                  "line": 19,
+                  "column": 45
+                }
+              },
+              {
+                "id": "01a1ceb4-c7ce-7dec-9cde-aecf5cb9d237:4",
+                "index": 4,
+                "kind": "assertion",
+                "api": "expect.toHaveURL",
+                "label": "/welcome/",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:41:57.270Z",
+                "durationMs": 0,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/gad.setup.e2e.ts",
+                  "line": 20,
+                  "column": 25
+                }
+              },
+              {
+                "id": "01a1ceb4-c7ce-7dec-9cde-aecf5cb9d237:5",
+                "index": 5,
+                "kind": "session",
+                "api": "session.save",
+                "label": "gad",
+                "status": "passed",
+                "startedAt": "2026-11-12T07:41:57.270Z",
+                "durationMs": 4,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/gad.setup.e2e.ts",
+                  "line": 21,
+                  "column": 17
+                }
+              }
+            ],
+            "appLog": [
+              {
+                "source": "console",
+                "level": "info",
+                "text": "No saved positions found, using base position (at http://localhost:3200/js/draggable-layout.js:70)",
+                "at": "2026-11-12T07:41:57.245Z",
+                "step": 3
+              },
+              {
+                "source": "network",
+                "level": "warning",
+                "text": "GET http://localhost:3200/data/users/face.png 404 Not Found",
+                "at": "2026-11-12T07:41:57.254Z",
+                "step": 3
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "summary": {
+      "discovered": 29,
+      "selected": 29,
+      "executed": 29,
+      "passed": 29,
+      "failed": 0,
+      "interrupted": 0,
+      "flaky": 0,
+      "skipped": 0
+    },
+    "limits": {
+      "maxAgentContextBytes": 16384,
+      "maxLedgerBytes": 8192,
+      "maxObservationBytes": 262144,
+      "maxEventsPerStep": 1000,
+      "maxModelTokensPerCall": 64000
+    },
+    "usage": {
+      "discoveredResults": 29,
+      "maxAgentContextBytes": 0,
+      "maxLedgerBytes": 705,
+      "maxObservationBytes": 13220,
+      "artifactBytes": 695489,
+      "downloads": 0,
+      "events": 99,
+      "modelTokens": 123976,
+      "maxModelCallsInStep": 4,
+      "maxActionStepsInStep": 4,
+      "modelCachedTokens": 64768
+    }
+  }
+}

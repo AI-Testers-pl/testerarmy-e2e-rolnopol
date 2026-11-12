@@ -1,0 +1,297 @@
+> All required packages are installed
+> Config: Running Self Check...
+> Config: Self Check Done
+> BugConfig: Running Self Check...
+> BugConfig: Self Check Done
+> FeatureFlagConfig: Running Self Check...
+> FeatureFlagConfig: Self Check Done
+[DEBUG] > Checking if DataBase exists at "./db/db.json"...
+[DEBUG] > [simpleMigrator] Verification started
+[DEBUG] > [simpleMigrator] No changes detected
+[DEBUG] > Checking database integrity...
+[DEBUG] > Database integrity is correct
+[DEBUG] Visits: generated for articles, comments and users
+[DEBUG] 🦎 GAD WebSocket listening on 3210!
+[DEBUG] Starting 🦎 GAD on port 3200...
+[DEBUG] --------------------------------
+[DEBUG] 🦎 GAD listening on 3200!
+[DEBUG] Visit it on -> http://localhost:3200
+[DEBUG] 🎉 Your custom 🦎 GAD (v2.8.8) is up and running!!!
+[DEBUG] --------------------------------
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-agent@test.pl"}
+[DEBUG] Field validation: field password not string [object Object]
+[DEBUG] formatErrorResponse: - {"error":{"message":"Field value is not a string: undefined","details":["firstname","lastname","email","avatar","password"]}}
+[0mPOST /api/users [33m422 [0m6.946 ms - 185[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.533 ms - 51[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.123 ms - 61[0m
+[0mGET /api/images/user [32m200 [0m0.703 ms - -[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.311 ms - 51[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.173 ms - 61[0m
+[0mGET /api/images/user [32m200 [0m0.591 ms - -[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.268 ms - 51[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.197 ms - 61[0m
+[0mGET /api/images/user [32m200 [0m0.686 ms - -[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.233 ms - 51[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.149 ms - 61[0m
+[0mGET /api/images/user [32m200 [0m0.561 ms - -[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.254 ms - 51[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.091 ms - 61[0m
+[0mGET /api/images/user [32m200 [0m0.438 ms - -[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.174 ms - 51[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.100 ms - 61[0m
+[0mGET /api/images/user [32m200 [0m0.508 ms - -[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.170 ms - 51[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.080 ms - 61[0m
+[0mGET /api/images/user [32m200 [0m0.545 ms - -[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.316 ms - 51[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.090 ms - 61[0m
+[0mGET /api/images/user [32m200 [0m0.634 ms - -[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469296958-b5h42cn69jh@test.pl"}
+[DEBUG] Register User: SUCCESS: - {"urlEnds":"/api/users","email":"e2e-1794469296958-b5h42cn69jh@test.pl"}
+[0mPOST /api/users [32m201 [0m108.021 ms - 176[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469297074-dkjfpatzfxo@test.pl"}
+[DEBUG] Register User: SUCCESS: - {"urlEnds":"/api/users","email":"e2e-1794469297074-dkjfpatzfxo@test.pl"}
+[0mPOST /api/users [32m201 [0m106.832 ms - 182[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469297187-tmtasg1tq9@test.pl"}
+[DEBUG] Register User: SUCCESS: - {"urlEnds":"/api/users","email":"e2e-1794469297187-tmtasg1tq9@test.pl"}
+[0mPOST /api/users [32m201 [0m108.082 ms - 176[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469297306-4d5quyj4r93@test.pl"}
+[DEBUG] Register User: SUCCESS: - {"urlEnds":"/api/users","email":"e2e-1794469297306-4d5quyj4r93@test.pl"}
+[0mPOST /api/users [32m201 [0m108.964 ms - 177[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469297425-e28q4i1sy5@test.pl"}
+[DEBUG] Register User: SUCCESS: - {"urlEnds":"/api/users","email":"e2e-1794469297425-e28q4i1sy5@test.pl"}
+[0mPOST /api/users [32m201 [0m107.912 ms - 178[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469297542-pfkdgqt7hu@test.pl"}
+[DEBUG] Register User: SUCCESS: - {"urlEnds":"/api/users","email":"e2e-1794469297542-pfkdgqt7hu@test.pl"}
+[0mPOST /api/users [32m201 [0m105.718 ms - 175[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469297651-m95l4mpj5be@test.pl"}
+[DEBUG] Register User: SUCCESS: - {"urlEnds":"/api/users","email":"e2e-1794469297651-m95l4mpj5be@test.pl"}
+[0mPOST /api/users [32m201 [0m106.012 ms - 177[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469297765-txqzkqmu88d@test.pl"}
+[DEBUG] Register User: SUCCESS: - {"urlEnds":"/api/users","email":"e2e-1794469297765-txqzkqmu88d@test.pl"}
+[0mPOST /api/users [32m201 [0m105.049 ms - 178[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":""}
+[DEBUG] Field validation: field email not valid 
+[DEBUG] formatErrorResponse: - {"error":{"message":"One of mandatory field is missing","details":["firstname","lastname","email","avatar","password"]}}
+[0mPOST /api/users [33m422 [0m0.301 ms - 180[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users"}
+[DEBUG] Field validation: field email not valid undefined
+[DEBUG] formatErrorResponse: - {"error":{"message":"One of mandatory field is missing","details":["firstname","lastname","email","avatar","password"]}}
+[0mPOST /api/users [33m422 [0m0.225 ms - 180[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469297888-561imyyhnco@test.pl"}
+[DEBUG] Field validation: field firstname not valid 
+[DEBUG] formatErrorResponse: - {"error":{"message":"One of mandatory field is missing","details":["firstname","lastname","email","avatar","password"]}}
+[0mPOST /api/users [33m422 [0m0.297 ms - 180[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469297893-9lu00p5ajoi@test.pl"}
+[DEBUG] Field validation: field firstname not valid undefined
+[DEBUG] formatErrorResponse: - {"error":{"message":"One of mandatory field is missing","details":["firstname","lastname","email","avatar","password"]}}
+[0mPOST /api/users [33m422 [0m0.312 ms - 180[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469297898-7g4plluxdz2@test.pl"}
+[DEBUG] Field validation: field lastname not valid 
+[DEBUG] formatErrorResponse: - {"error":{"message":"One of mandatory field is missing","details":["firstname","lastname","email","avatar","password"]}}
+[0mPOST /api/users [33m422 [0m0.282 ms - 180[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469297902-pqrhtzh5aa@test.pl"}
+[DEBUG] Field validation: field lastname not valid undefined
+[DEBUG] formatErrorResponse: - {"error":{"message":"One of mandatory field is missing","details":["firstname","lastname","email","avatar","password"]}}
+[0mPOST /api/users [33m422 [0m0.237 ms - 180[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469297906-lduebpith88@test.pl"}
+[DEBUG] Field validation: field password not valid 
+[DEBUG] formatErrorResponse: - {"error":{"message":"One of mandatory field is missing","details":["firstname","lastname","email","avatar","password"]}}
+[0mPOST /api/users [33m422 [0m0.170 ms - 180[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469297909-49aipk9h5ig@test.pl"}
+[DEBUG] Field validation: field password not valid undefined
+[DEBUG] formatErrorResponse: - {"error":{"message":"One of mandatory field is missing","details":["firstname","lastname","email","avatar","password"]}}
+[0mPOST /api/users [33m422 [0m0.194 ms - 180[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469297912-y9e3dioala8@test.pl"}
+[DEBUG] Field validation: field avatar not valid 
+[DEBUG] formatErrorResponse: - {"error":{"message":"One of mandatory field is missing","details":["firstname","lastname","email","avatar","password"]}}
+[0mPOST /api/users [33m422 [0m0.175 ms - 180[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469297915-lvrx087c3ym@test.pl"}
+[DEBUG] Field validation: field avatar not valid undefined
+[DEBUG] formatErrorResponse: - {"error":{"message":"One of mandatory field is missing","details":["firstname","lastname","email","avatar","password"]}}
+[0mPOST /api/users [33m422 [0m0.143 ms - 180[0m
+> All required packages are installed
+> Config: Running Self Check...
+> Config: Self Check Done
+> BugConfig: Running Self Check...
+> BugConfig: Self Check Done
+> FeatureFlagConfig: Running Self Check...
+> FeatureFlagConfig: Self Check Done
+[DEBUG] > Checking if DataBase exists at "./db/db.json"...
+[DEBUG] > [simpleMigrator] Verification started
+[DEBUG] > [simpleMigrator] No changes detected
+[DEBUG] > Checking database integrity...
+[DEBUG] > Database integrity is correct
+[DEBUG] Visits: generated for articles, comments and users
+[DEBUG] 🦎 GAD WebSocket listening on 3210!
+[DEBUG] Starting 🦎 GAD on port 3200...
+[DEBUG] --------------------------------
+[DEBUG] 🦎 GAD listening on 3200!
+[DEBUG] Visit it on -> http://localhost:3200
+[DEBUG] 🎉 Your custom 🦎 GAD (v2.8.8) is up and running!!!
+[DEBUG] --------------------------------
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-agent@test.pl"}
+[DEBUG] Register User: SUCCESS: - {"urlEnds":"/api/users","email":"e2e-agent@test.pl"}
+[0mPOST /api/users [32m201 [0m115.496 ms - 158[0m
+[0mGET /login/ [32m200 [0m2.184 ms - -[0m
+[DEBUG] process_login: { email, password, keepSignIn }: - {"username":"e2e-agent@test.pl","password":"Haslo123!e2e","redirectURL":""}
+[DEBUG] process_login: { isSuperAdmin, authenticated }: - {"isSuperAdmin":false,"authenticated":true}
+[DEBUG] createToken: - {"expires":"60m"}
+[DEBUG] process_login: { cookieMaxAge, isSuperAdmin }: - {"cookieMaxAge":3600000,"isSuperAdmin":false}
+[DEBUG] process_login: Access Token: - {"email":"e2e-agent@test.pl","password":"Haslo123!e2e","access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImUyZS1hZ2VudEB0ZXN0LnBsIiwiZGF0YSI6IlRCRCIsImlhdCI6MTc5NDQ2OTMxNywiZXhwIjoxNzk0NDcyOTE3fQ.FK880pCCH8rFlUYiMuDNDTQR8HbtOT-jH_5WVAYaoDU","cookieMaxAge":3600000,"isSuperAdmin":false}
+[0mPOST /process_login [36m302 [0m3.644 ms - 37[0m
+[DEBUG] welcomeRoutes: - {"username":"e2e-agent@test.pl"}
+[0mGET /welcome [32m200 [0m0.818 ms - -[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.377 ms - 49[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.130 ms - 66[0m
+[0mGET /data/users/face.png [33m404 [0m1.699 ms - -[0m
+[0mGET /api/messenger/unread [32m200 [0m3.936 ms - 59[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.158 ms - 68[0m
+[0mGET /data/users/face.png [33m404 [0m0.621 ms - -[0m
+[0mGET /api/messenger/unread [32m200 [0m2.403 ms - 59[0m
+[0mGET /api/images/posts [32m200 [0m0.683 ms - -[0m
+[0mGET /api/articles?_limit=6&_page=1&_sort=date&_order=DESC [32m200 [0m5.105 ms - -[0m
+[0mGET /api/users?id=1&id=16 [32m200 [0m3.513 ms - 339[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.207 ms - 49[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.117 ms - 50[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.084 ms - 50[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.084 ms - 66[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.103 ms - 51[0m
+[0mPOST /api/articles [32m201 [0m10.167 ms - 247[0m
+[0mGET /data/users/face.png [33m404 [0m0.880 ms - -[0m
+[0mGET /api/messenger/unread [36m304 [0m4.007 ms - -[0m
+[0mGET /api/articles/75 [32m200 [0m5.915 ms - 247[0m
+[0mGET /api/users/16 [32m200 [0m3.320 ms - 137[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.155 ms - 51[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.094 ms - 49[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.074 ms - 50[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.067 ms - 50[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.058 ms - 66[0m
+[DEBUG] [DELAY] Waiting for 30 [ms] for /api/comments?article_id=75
+[0mGET /api/comments?article_id=75 [32m200 [0m35.346 ms - 2[0m
+[0mGET /api/users?id=16 [32m200 [0m3.594 ms - 157[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.139 ms - 68[0m
+[0mGET /data/users/face.png [33m404 [0m0.732 ms - -[0m
+[0mGET /api/messenger/unread [32m200 [0m3.054 ms - 59[0m
+[0mGET /api/images/posts [32m200 [0m0.434 ms - -[0m
+[0mGET /api/articles?_limit=6&_page=1&_sort=date&_order=DESC [32m200 [0m3.862 ms - -[0m
+[0mGET /api/users?id=16&id=1&id=16 [32m200 [0m3.325 ms - 339[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.163 ms - 49[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.077 ms - 50[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.072 ms - 50[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.071 ms - 66[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.060 ms - 51[0m
+[0mPOST /api/articles [32m201 [0m9.784 ms - 238[0m
+[0mGET /data/users/face.png [33m404 [0m0.806 ms - -[0m
+[0mGET /api/messenger/unread [36m304 [0m3.423 ms - -[0m
+[0mGET /api/articles/76 [32m200 [0m5.209 ms - 238[0m
+[0mGET /api/users/16 [32m200 [0m3.348 ms - 137[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.124 ms - 51[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.078 ms - 49[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.068 ms - 50[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.056 ms - 50[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.060 ms - 66[0m
+[DEBUG] [DELAY] Waiting for 30 [ms] for /api/comments?article_id=76
+[0mGET /api/comments?article_id=76 [32m200 [0m34.425 ms - 2[0m
+[0mGET /api/users?id=16 [32m200 [0m3.449 ms - 157[0m
+[DEBUG] handleArticles: foundUser and user_id: - {"foundUser":{"email":"e2e-agent@test.pl","firstname":"E2E","lastname":"Agent","password":"Haslo123!e2e","avatar":"./data/users/face.png","id":16},"user_id":16}
+[0mPUT /api/articles/76 [32m200 [0m14.655 ms - 2[0m
+[0mGET /data/users/face.png [33m404 [0m0.862 ms - -[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.446 ms - 68[0m
+[0mGET /api/images/posts [36m304 [0m1.085 ms - -[0m
+[0mGET /api/messenger/unread [36m304 [0m3.594 ms - -[0m
+[0mGET /api/articles?_limit=6&_page=1&_sort=date&_order=DESC [36m304 [0m2.760 ms - -[0m
+[0mGET /api/users?id=16&id=1&id=16 [36m304 [0m2.574 ms - -[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.204 ms - 49[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.096 ms - 50[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.123 ms - 50[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.088 ms - 66[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.140 ms - 51[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.584 ms - 51[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.106 ms - 61[0m
+[0mGET /api/images/user [32m200 [0m1.069 ms - -[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.243 ms - 51[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.087 ms - 61[0m
+[0mGET /api/images/user [32m200 [0m0.508 ms - -[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.199 ms - 51[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.108 ms - 61[0m
+[0mGET /api/images/user [32m200 [0m0.528 ms - -[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.164 ms - 51[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.091 ms - 61[0m
+[0mGET /api/images/user [32m200 [0m0.681 ms - -[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.221 ms - 51[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.108 ms - 61[0m
+[0mGET /api/images/user [32m200 [0m0.802 ms - -[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.210 ms - 51[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.075 ms - 61[0m
+[0mGET /api/images/user [32m200 [0m0.449 ms - -[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.164 ms - 51[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.089 ms - 61[0m
+[0mGET /api/images/user [32m200 [0m1.099 ms - -[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.153 ms - 51[0m
+[0mPOST /api/config/checkfeature [32m200 [0m0.076 ms - 61[0m
+[0mGET /api/images/user [32m200 [0m0.477 ms - -[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469522150-wni98wegnz@test.pl"}
+[DEBUG] Register User: SUCCESS: - {"urlEnds":"/api/users","email":"e2e-1794469522150-wni98wegnz@test.pl"}
+[0mPOST /api/users [32m201 [0m106.734 ms - 175[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469522265-jog0axsvmvc@test.pl"}
+[DEBUG] Register User: SUCCESS: - {"urlEnds":"/api/users","email":"e2e-1794469522265-jog0axsvmvc@test.pl"}
+[0mPOST /api/users [32m201 [0m104.937 ms - 182[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469522381-kt7o4t9rwv@test.pl"}
+[DEBUG] Register User: SUCCESS: - {"urlEnds":"/api/users","email":"e2e-1794469522381-kt7o4t9rwv@test.pl"}
+[0mPOST /api/users [32m201 [0m107.850 ms - 176[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469522496-tbd80lzifn@test.pl"}
+[DEBUG] Register User: SUCCESS: - {"urlEnds":"/api/users","email":"e2e-1794469522496-tbd80lzifn@test.pl"}
+[0mPOST /api/users [32m201 [0m106.213 ms - 176[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469522608-1l7rhntgihj@test.pl"}
+[DEBUG] Register User: SUCCESS: - {"urlEnds":"/api/users","email":"e2e-1794469522608-1l7rhntgihj@test.pl"}
+[0mPOST /api/users [32m201 [0m106.672 ms - 179[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469522723-94lb8f9axkh@test.pl"}
+[DEBUG] Register User: SUCCESS: - {"urlEnds":"/api/users","email":"e2e-1794469522723-94lb8f9axkh@test.pl"}
+[0mPOST /api/users [32m201 [0m107.342 ms - 176[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469522841-vpccgt27hvk@test.pl"}
+[DEBUG] Register User: SUCCESS: - {"urlEnds":"/api/users","email":"e2e-1794469522841-vpccgt27hvk@test.pl"}
+[0mPOST /api/users [32m201 [0m108.612 ms - 177[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469522961-ajil4t9a87@test.pl"}
+[DEBUG] Register User: SUCCESS: - {"urlEnds":"/api/users","email":"e2e-1794469522961-ajil4t9a87@test.pl"}
+[0mPOST /api/users [32m201 [0m107.497 ms - 177[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":""}
+[DEBUG] Field validation: field email not valid 
+[DEBUG] formatErrorResponse: - {"error":{"message":"One of mandatory field is missing","details":["firstname","lastname","email","avatar","password"]}}
+[0mPOST /api/users [33m422 [0m0.679 ms - 180[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users"}
+[DEBUG] Field validation: field email not valid undefined
+[DEBUG] formatErrorResponse: - {"error":{"message":"One of mandatory field is missing","details":["firstname","lastname","email","avatar","password"]}}
+[0mPOST /api/users [33m422 [0m0.460 ms - 180[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469523093-k4vo1v1y04b@test.pl"}
+[DEBUG] Field validation: field firstname not valid 
+[DEBUG] formatErrorResponse: - {"error":{"message":"One of mandatory field is missing","details":["firstname","lastname","email","avatar","password"]}}
+[0mPOST /api/users [33m422 [0m0.592 ms - 180[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469523098-a8mqvhg0ftr@test.pl"}
+[DEBUG] Field validation: field firstname not valid undefined
+[DEBUG] formatErrorResponse: - {"error":{"message":"One of mandatory field is missing","details":["firstname","lastname","email","avatar","password"]}}
+[0mPOST /api/users [33m422 [0m0.320 ms - 180[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469523102-qplwwmcg95@test.pl"}
+[DEBUG] Field validation: field lastname not valid 
+[DEBUG] formatErrorResponse: - {"error":{"message":"One of mandatory field is missing","details":["firstname","lastname","email","avatar","password"]}}
+[0mPOST /api/users [33m422 [0m0.160 ms - 180[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469523105-1rjt36cjh8s@test.pl"}
+[DEBUG] Field validation: field lastname not valid undefined
+[DEBUG] formatErrorResponse: - {"error":{"message":"One of mandatory field is missing","details":["firstname","lastname","email","avatar","password"]}}
+[0mPOST /api/users [33m422 [0m0.221 ms - 180[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469523108-ip6xnzxuf5e@test.pl"}
+[DEBUG] Field validation: field password not valid 
+[DEBUG] formatErrorResponse: - {"error":{"message":"One of mandatory field is missing","details":["firstname","lastname","email","avatar","password"]}}
+[0mPOST /api/users [33m422 [0m0.163 ms - 180[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469523111-7xmkuhoqeg3@test.pl"}
+[DEBUG] Field validation: field password not valid undefined
+[DEBUG] formatErrorResponse: - {"error":{"message":"One of mandatory field is missing","details":["firstname","lastname","email","avatar","password"]}}
+[0mPOST /api/users [33m422 [0m0.164 ms - 180[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469523114-2rhjcyo9223@test.pl"}
+[DEBUG] Field validation: field avatar not valid 
+[DEBUG] formatErrorResponse: - {"error":{"message":"One of mandatory field is missing","details":["firstname","lastname","email","avatar","password"]}}
+[0mPOST /api/users [33m422 [0m0.173 ms - 180[0m
+[DEBUG] Register User: attempt: - {"urlEnds":"/api/users","email":"e2e-1794469523117-ji61wl8bbth@test.pl"}
+[DEBUG] Field validation: field avatar not valid undefined
+[DEBUG] formatErrorResponse: - {"error":{"message":"One of mandatory field is missing","details":["firstname","lastname","email","avatar","password"]}}
+[0mPOST /api/users [33m422 [0m0.134 ms - 180[0m

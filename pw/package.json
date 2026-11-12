@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "type": "module",
+  "description": "Playwright Test obok e2e: te same scenariusze Rolnopolu do porównania (eksperymenty E6-E11, 13.10.2026)",
+  "devDependencies": {
+    "@playwright/test": "1.65.0",
+    "zod": "4.6.7"
+  },
+  "scripts": { "test": "playwright test" }
+}
